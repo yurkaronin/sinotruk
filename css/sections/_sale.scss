@@ -1,0 +1,9 @@
+.sale {
+  background-color: var(--col02);
+  color: var(--col06);
+  padding-bottom: 80px;
+
+  .content-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

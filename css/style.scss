@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+@import "site/site";
+@import "components/components";
+@import "sections/sections";
+
+.header-sticky {
+  .header {
+    background-color: var(--col06);
+    color: var(--col07);
+    box-shadow: 3px 3px 12px rgb(0 0 0 / 20%);
+
+    &::after {
+      display: none;
+    }
+  }
+  .header__logo-two {
+    color: var(--col07);
+  }
+}

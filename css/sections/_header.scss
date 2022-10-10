@@ -1,0 +1,122 @@
+.header {
+  padding: 16px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  transition: all 0.3s;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(#ffffff, 0.3);
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+  }
+
+  &__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    margin-right: 37px;
+    a {
+      display: flex;
+      align-items: center;
+      min-height: var(--elem-sz);
+      padding: 0 18px;
+      background-color: transparent;
+      max-width: max-content;
+      transition: all 0.3s;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: var(--col4);
+      }
+    }
+    svg {
+      width: 34px;
+      height: 33px;
+      margin-right: 33px;
+    }
+    span {
+      font-family: var(--ff1);
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 15px;
+      letter-spacing: 0.5em;
+      text-transform: uppercase;
+      color: var(--col-wh);
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__menu {
+    ul {
+      display: flex;
+    }
+    li {
+      margin-right: 32px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__contacts {
+    margin-left: auto;
+    position: relative;
+    padding-right: 20px;
+
+    &:after {
+      display: block;
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 4px;
+      background-color: var(--col01);
+    }
+  }
+  &__contacts-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__logo-two {
+    margin-bottom: 6px;
+    span {
+      display: block;
+      font-family: var(--ff2);
+      color: inherit;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 1;
+    }
+  }
+  &__tel {
+    a {
+      display: flex;
+      align-items: center;
+    }
+
+    span {
+      margin-left: 8px;
+    }
+  }
+
+  &__buttons {
+    display: none;
+  }
+}
