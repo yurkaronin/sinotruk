@@ -125,4 +125,30 @@
   &__buttons {
     display: none;
   }
+
+  @media (max-width: 1024px) {
+    &__logo {
+      img {
+        height: 50px;
+        width: auto;
+      }
+    }
+    &__contacts-flex {
+      margin-top: 0;
+    }
+    &__menu {
+      display: none;
+    }
+    &__buttons {
+      display: block;
+    }
+    &__contacts:after {
+      display: none;
+    }
+    &__logo-two {
+      span {
+        font-size: 26px;
+      }
+    }
+  }
 }

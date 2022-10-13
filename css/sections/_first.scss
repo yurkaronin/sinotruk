@@ -1,5 +1,4 @@
 .first {
-
   &__slider-item {
     height: 100vh;
     // position: relative;
@@ -53,7 +52,6 @@
     ul {
       display: flex;
       max-width: max-content;
-
     }
     li {
       margin-right: 16px;
@@ -74,5 +72,31 @@
     margin: 0;
     width: initial;
     margin-right: 32px;
+  }
+
+  @media (max-width: 1024px) {
+
+    &__slider-item {
+      height: initial;
+    }
+    &__slider-content {
+      padding: 40px 0;
+      min-height: 575px;
+      .wrapper {
+        margin-bottom: initial;
+      }
+      .title {
+        font-size: 60px;
+      }
+      .text {
+        font-size: 18px;
+      }
+    }
+    &__slider-navigation {
+      .wrapper {
+        // margin-bottom: initial;
+        margin-bottom: 40px;
+      }
+    }
   }
 }

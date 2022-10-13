@@ -25,6 +25,26 @@
     .button {
       padding: 12px 22px;
     }
+  }
+
+  @media (max-width: 1024px) {
+    padding-bottom: 90px;
+    &__content {
+      grid-template-columns: 1fr;
+      gap: 32px;
+  }
+    .sticky-content {
+      position: initial;
+      top: initial;
+    }
+    &__left {
+      padding-top: 50px;
+      padding-right: initial;
+
+      .title {
+        font-size: 36px;
+      }
+    }
 
   }
 

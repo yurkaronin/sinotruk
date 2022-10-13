@@ -15,4 +15,10 @@
       padding-bottom: 26px;
     }
   }
+
+  @media (max-width: 1024px) {
+    .content-grid {
+      margin-top: initial;
+    }
+  }
 }
