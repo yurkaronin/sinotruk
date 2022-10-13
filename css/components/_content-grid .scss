@@ -44,7 +44,6 @@
   }
 
   .clear {
-    border: none;
     background-color: transparent;
 
     .content-grid__title {
@@ -61,11 +60,6 @@
         left: 0;
         bottom: -1px;
       }
-    }
-
-    .content-grid__item-description {
-      padding-top: 22px;
-      padding-bottom: 32px;
     }
   }
 }

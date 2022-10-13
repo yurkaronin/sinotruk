@@ -2,21 +2,30 @@
   z-index: 2;
   position: relative;
   padding-bottom: 160px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: rgba(#ffffff, 0.3);
 
   &__content {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    gap: 32px;
-    // margin-bottom: 160px;
+    gap: 12px;
   }
   &__left {
-    padding: 66px 0 0;
+    padding-top: 68px;
+    padding-right: 20px;
 
     .text {
       margin: 0;
       color: rgba(#ffffff, 0.7);
       line-height: 1.5;
-      margin-bottom: 22px;
+      margin-bottom: 34px;
+      font-size: 16px;
     }
+    .button {
+      padding: 12px 22px;
+    }
+
   }
+
 }

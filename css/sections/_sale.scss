@@ -5,5 +5,14 @@
 
   .content-grid {
     grid-template-columns: 1fr 1fr;
+    margin-top: -80px;
+
+    &__item-footer {
+      padding: 0 24px;
+    }
+    &__item-description {
+      padding-top: 22px;
+      padding-bottom: 26px;
+    }
   }
 }

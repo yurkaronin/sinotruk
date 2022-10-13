@@ -1,7 +1,7 @@
 .footer {
   background-color: var(--col07);
   color: var(--col06);
-  padding: 46px 0 50px;
+  padding: 53px 0 50px;
 
   &__grid {
     display: grid;
@@ -39,7 +39,7 @@
   }
 
   &__list {
-    padding: 10px 0;
+    padding: 20px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
@@ -51,6 +51,7 @@
       padding-left: 24px;
       display: flex;
       align-items: center;
+      margin-bottom: 18px;
 
       &::before {
         content: "";
@@ -65,7 +66,9 @@
         font-family: inherit;
         text-decoration: none;
         font-size: 14px;
-        line-height: 1.5;
+        line-height: 1;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
       }
     }
   }
@@ -74,11 +77,11 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 26px 0;
+      padding: 25px 0 22px;
       position: relative;
 
       &:first-child {
-        padding-top: 0;
+        padding-top: 5px;
       }
 
       &:after {
@@ -112,22 +115,25 @@
     letter-spacing: 0.02em;
     color: rgba(#ffffff, 0.7);
     text-align: right;
-    b, span {
+    b,
+    span {
       color: var(--col06);
     }
   }
   &__address {
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 33px;
     li {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
   }
   &__copy {
+    font-size: 16px;
     a {
       display: flex;
       align-items: center;
       justify-content: flex-end;
+      margin-top: 10px;
 
       b {
         margin: 0 12px;

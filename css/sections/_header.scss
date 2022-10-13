@@ -1,5 +1,5 @@
 .header {
-  padding: 16px 0;
+  padding: 14px 0 16px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -24,12 +24,12 @@
   }
 
   &__logo {
-    margin-right: 37px;
+    margin-right: 40px;
     a {
       display: flex;
       align-items: center;
       min-height: var(--elem-sz);
-      padding: 0 18px;
+      // padding: 0 18px;
       background-color: transparent;
       max-width: max-content;
       transition: all 0.3s;
@@ -69,6 +69,11 @@
         margin-right: 0;
       }
     }
+    a {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
   }
 
   &__contacts {
@@ -91,10 +96,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-top: 6px;
   }
 
   &__logo-two {
-    margin-bottom: 6px;
     span {
       display: block;
       font-family: var(--ff2);
@@ -109,6 +114,7 @@
     a {
       display: flex;
       align-items: center;
+      font-family: var(--ff2);
     }
 
     span {
