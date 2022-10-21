@@ -1,0 +1,11 @@
+.header-sticky {
+  .header {
+    background-color: var(--col08);
+    box-shadow: 3px 3px 12px rgb(0 0 0 / 20%);
+
+    // &::after {
+    //   display: none;
+    // }
+  }
+
+}
