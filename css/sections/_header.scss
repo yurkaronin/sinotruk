@@ -67,21 +67,6 @@
       z-index: 22;
       background-color: transparent;
       transition: all 0.3s;
-
-      // &::before {
-      //   content: "";
-      //   display: block;
-      //   position: absolute;
-      //   top: 0;
-      //   left: 0;
-      //   background-color: var(--col-wh);
-      //   transition: all 0.3s;
-      //   width: 100%;
-      //   height: 100%;
-      //   pointer-events: none;
-      //   opacity: 0;
-      //   z-index: 2;
-      // }
     }
     a {
       font-size: 14px;
@@ -93,13 +78,15 @@
       span {
         position: relative;
         z-index: 2;
-        margin-right: 7px;
+        // margin-right: 7px;
       }
       svg {
         position: relative;
         z-index: 2;
         pointer-events: none;
+        margin-left: 8px;
       }
+
     }
 
     li:hover {
@@ -121,6 +108,17 @@
         }
       }
     }
+    // активный пункт
+    li.active {
+      background-color: var(--col-wh);
+      color: var(--col05);
+      &:hover,
+      &:active {
+        span {
+          color: var(--col05);
+        }
+      }
+    }
   }
 
   &__submenu {
@@ -138,7 +136,7 @@
       }
     }
     a {
-      padding: 8px 48px;
+      padding: 8px 40px;
       display: flex;
       transition: all 0.3s;
 
@@ -173,6 +171,21 @@
           &::before {
             width: 16px;
             transform: translateX(-8px);
+            background-color: var(--col03);
+          }
+        }
+      }
+
+      // активный пункт
+      &.active {
+        background-color: var(--col01);
+        color: var(--col-wh);
+
+        span {
+          color: var(--col-wh) !important;
+
+          &::before {
+            background-color: var(--col03);
           }
         }
       }

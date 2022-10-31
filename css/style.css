@@ -115,96 +115,6 @@ input[type=radio].visually-hidden {
   clip-path: inset(100%);
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  border: none;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--col01);
-  border-radius: 0;
-  transition: all 0.3s;
-  /* svg {
-    position: relative;
-    z-index: 2;
-  }
-
-  svg path {
-    transition: all 0.3s;
-  } */
-  /* &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    border-radius: 50%;
-    transition-property: left, top, width, height;
-    transition-duration: 0.3s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 0;
-  } */
-  /* &:hover {
-    background-color: #91C137 !important;
-
-    &::before {
-      left: -4px;
-      top: -4px;
-      width: calc(100% + 8px);
-      height: calc(100% + 8px);
-      background-color: #91C137;
-    }
-
-    svg path {
-      stroke: #ffffff;
-    }
-
-    svg .cust {
-      stroke: none;
-      fill: #ffffff;
-    }
-  } */
-  /* &:after {
-    display: none;
-  } */
-  /* @media (max-width: 650px) {
-    width: 60px;
-    height: 60px;
-  } */
-}
-
-/* .swiper-button-disabled {
-  opacity: 0 !important;
-}
-
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  position: absolute;
-  color: #000000;
-} */
-/* .swiper-button-next:after {
-  left: 50px;
-}
-.swiper-button-prev:after {
-  right: 50px;
-} */
-/* @media (max-width: 1024px) {
-  .slider-button:after {
-    font-size: 30px;
-  }
-
-  .swiper-button-next:after {
-    left: 22px;
-}
-
-.swiper-button-prev:after {
-  right: 22px;
-}
-} */
 .body {
   min-height: 100vh;
 }
@@ -510,6 +420,76 @@ input[type=radio].visually-hidden {
   transition: all 0.3s;
 }
 
+.swiper-button {
+  border: none;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  transition: all 0.3s;
+  z-index: 2;
+  background-color: transparent;
+  position: relative !important;
+  top: initial;
+  left: initial;
+  right: initial;
+  bottom: initial;
+}
+.swiper-button::before {
+  content: "";
+  display: block !important;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--col01);
+  transition: all 0.3s;
+}
+.swiper-button svg {
+  z-index: 2;
+}
+.swiper-button:hover::before {
+  width: calc(100% + 16px);
+  left: -8px;
+  right: 8px;
+}
+
+.swiper-button-prev path {
+  transform: translateX(8px);
+  transition: all 0.3s;
+}
+.swiper-button-prev .line {
+  stroke: #ffffff;
+  transform: translateX(-8px);
+  transition: all 0.3s;
+}
+.swiper-button-prev:active path, .swiper-button-prev:hover path, .swiper-button-prev:focus path {
+  transform: translateX(0);
+}
+.swiper-button-prev:active .line, .swiper-button-prev:hover .line, .swiper-button-prev:focus .line {
+  transform: translateX(0);
+}
+
+.swiper-button-next path {
+  transform: translateX(-8px);
+  transition: all 0.3s;
+}
+.swiper-button-next .line {
+  stroke: #ffffff;
+  transform: translateX(8px);
+  transition: all 0.3s;
+}
+.swiper-button-next:active path, .swiper-button-next:hover path, .swiper-button-next:focus path {
+  transform: translateX(0);
+}
+.swiper-button-next:active .line, .swiper-button-next:hover .line, .swiper-button-next:focus .line {
+  transform: translateX(0);
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -582,12 +562,12 @@ input[type=radio].visually-hidden {
 .header__menu a span {
   position: relative;
   z-index: 2;
-  margin-right: 7px;
 }
 .header__menu a svg {
   position: relative;
   z-index: 2;
   pointer-events: none;
+  margin-left: 8px;
 }
 .header__menu li:hover {
   background-color: var(--col-wh);
@@ -606,6 +586,13 @@ input[type=radio].visually-hidden {
   transition: all 0.3s;
   stroke: var(--col02);
 }
+.header__menu li.active {
+  background-color: var(--col-wh);
+  color: var(--col05);
+}
+.header__menu li.active:hover span, .header__menu li.active:active span {
+  color: var(--col05);
+}
 .header__submenu {
   flex-direction: column;
   position: absolute;
@@ -622,7 +609,7 @@ input[type=radio].visually-hidden {
   display: none;
 }
 .header__submenu a {
-  padding: 8px 48px;
+  padding: 8px 40px;
   display: flex;
   transition: all 0.3s;
 }
@@ -656,6 +643,17 @@ input[type=radio].visually-hidden {
 .header__submenu a:hover span::before {
   width: 16px;
   transform: translateX(-8px);
+  background-color: var(--col03);
+}
+.header__submenu a.active {
+  background-color: var(--col01);
+  color: var(--col-wh);
+}
+.header__submenu a.active span {
+  color: var(--col-wh) !important;
+}
+.header__submenu a.active span::before {
+  background-color: var(--col03);
 }
 .header__contacts {
   margin-left: auto;
@@ -1082,14 +1080,13 @@ input[type=radio].visually-hidden {
 
 .dropdown-menu {
   opacity: 0;
-  transition: all 0.3s, width 0.6s;
-  transform: translateY(-200%);
-  width: 100%;
+  transition: all 0.3s, width 0.2s;
+  width: 120%;
   z-index: 1;
+  pointer-events: none;
 }
 
 li:hover .dropdown-menu {
   opacity: 1;
-  transform: translateY(0);
-  width: 120%;
+  pointer-events: initial;
 }

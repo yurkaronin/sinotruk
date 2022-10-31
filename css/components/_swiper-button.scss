@@ -1,0 +1,84 @@
+.swiper-button {
+  border: none;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  transition: all 0.3s;
+  z-index: 2;
+  background-color: transparent;
+  position: relative !important;
+  top: initial;
+  left: initial;
+  right: initial;
+  bottom: initial;
+
+  &::before {
+    content: "";
+    display: block !important;
+    width: calc(100%);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--col01);
+    transition: all 0.3s;
+  }
+
+  svg {
+    z-index: 2;
+  }
+
+  &:hover::before {
+    width: calc(100% + 16px);
+    left: -8px;
+    right: 8px;
+  }
+}
+
+.swiper-button-prev {
+  path {
+    transform: translateX(8px);
+    transition: all 0.3s;
+  }
+  .line {
+    stroke: #ffffff;
+    transform: translateX(-8px);
+    transition: all 0.3s;
+  }
+  &:active,
+  &:hover,
+  &:focus {
+    path {
+      transform: translateX(0);
+    }
+    .line {
+      transform: translateX(0);
+    }
+  }
+}
+
+.swiper-button-next {
+  path {
+    transform: translateX(-8px);
+    transition: all 0.3s;
+  }
+  .line {
+    stroke: #ffffff;
+    transform: translateX(8px);
+    transition: all 0.3s;
+  }
+  &:active,
+  &:hover,
+  &:focus {
+    path {
+      transform: translateX(0);
+    }
+    .line {
+      transform: translateX(0);
+    }
+  }
+}
