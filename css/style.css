@@ -211,7 +211,7 @@ input[type=radio].visually-hidden {
   height: 2px;
   background-color: var(--col06);
   display: block;
-  border-radius: 0 0 3px 3px;
+  border-radius: 0;
   pointer-events: none;
   transition: all 0.2s;
 }
@@ -708,7 +708,18 @@ input[type=radio].visually-hidden {
 .header__buttons {
   display: none;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
+  .header__menu {
+    flex-grow: 2;
+  }
+  .header__menu ul {
+    justify-content: center;
+  }
+}
+@media (max-width: 1100px) {
+  .header {
+    padding: 15px 0;
+  }
   .header__logo img {
     height: 50px;
     width: auto;
