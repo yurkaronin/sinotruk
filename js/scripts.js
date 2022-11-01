@@ -1,37 +1,43 @@
+// Переменные
+const menuButton = document.querySelector('.nav-button');
+// Функции
+function headerChange() {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > 10) {
+    document.body.classList.add('header-sticky');
+  } else {
+    document.body.classList.remove('header-sticky');
+  }
+};
+
 document.addEventListener("DOMContentLoaded", () => {
-  const menuButton = document.querySelector('.nav-button');
-  // прилипающая шапка
-  window.onscroll = function () {
-    if (window.pageYOffset > 10) {
-      document.body.classList.add('header-sticky');
-    } else {
-      document.body.classList.remove('header-sticky');
-    }
-
-  };
-
+  // Проверяем состояние прокрутки страницы. если прокрутка есть - перекрашиваем шапку
+  headerChange();
+// отслеживаем событие скрола страницы и перекрашиваем шапку
+  document.addEventListener('scroll', e => {
+    headerChange();
+  });
+// при клике по кнопке вызова меню - добавляем служебный класс на body
   menuButton.addEventListener('click', function () {
     document.body.classList.toggle('mob-menu-open');
     menuButton.classList.toggle('open');
   });
-
-  // Слайдеры
+  // Слайдеры ///////////////////////////////////////////////////////
+  // слайдер с картинками на главной странице
   const swiperIMG = new Swiper('#photo-slider', {
-    // параметры слайдера
     loop: false,
     speed: 2400,
     parallax: true,
   });
-
+  // слайдер с текстовым описанием на главной странице
   const swiperDETAILS = new Swiper('#text-slider', {
-    // параметры слайдера
     loop: false,
     speed: 2400,
-    grabCursor: true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
+    grabCursor: false,
+    // autoplay: {
+    //   delay: 4000,
+    //   disableOnInteraction: false,
+    // },
     mousewheel: {
       invert: false,
     },
@@ -46,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     parallax: true,
   });
-
+// реализация синхронизации двух слайдеров между собой
   swiperIMG.controller.control = swiperDETAILS
   swiperDETAILS.controller.control = swiperIMG
 

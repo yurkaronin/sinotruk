@@ -1,10 +1,12 @@
 .home-slider {
   max-width: 100%;
-  overflow-x: hidden;
   position: relative;
+  overflow: hidden;
+  height: 100vh;
+  min-height: 780px;
   // микс
   .wrapper {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -37,7 +39,7 @@
   }
 
   &__photo-slide {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
@@ -62,12 +64,6 @@
           linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%);
         z-index: 2;
       }
-
-      img {
-        // width: 100%;
-        // height: 100%;
-        // object-fit: cover;
-      }
     }
 
     .swiper-slide {
@@ -76,9 +72,8 @@
       transition: all 0.3s;
       &-active {
         img {
-          // margin-top: -25%;
           transform-origin: center left;
-          animation: grow 150000ms ease;
+          animation: grow 45000ms ease;
         }
       }
     }
@@ -133,14 +128,14 @@
     transform: scale(1);
   }
   100% {
-    transform: scale(2);
+    transform: scale(1.3);
   }
 }
 .home-slider {
   @media (max-width: 1024px) {
+    height: 620px;
+    min-height: 620px;
     .wrapper {
-      height: initial;
-      min-height: 620px;
       padding-bottom: 32px;
     }
     &__text-slide h1 {
@@ -148,9 +143,8 @@
     }
   }
   @media (max-width: 768px) {
-    .wrapper {
-      min-height: 500px;
-    }
+    height: 500px;
+    min-height: 500px;
     &__text-slide h1 {
       font-size: 47px;
     }

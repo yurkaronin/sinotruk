@@ -286,4 +286,28 @@
       }
     }
   }
+
+  @media (max-width: 425px) {
+    &__logo {
+      margin-right: 0;
+    }
+    &__contacts {
+      margin-left: 0;
+      padding-right: 0;
+    }
+    &__logo-two {
+      margin-bottom: 5px;
+      span {
+        font-size: 20px;
+      }
+    }
+    &__tel {
+      svg {
+        display: none;
+      }
+      span {
+        margin: 0 !important;
+      }
+    }
+  }
 }
