@@ -1240,6 +1240,7 @@ input[type=radio].visually-hidden {
 }
 .footer__sublist a {
   position: relative;
+  padding: 10px 0;
   padding-left: 24px;
   width: 100%;
   display: flex;
@@ -1267,6 +1268,12 @@ input[type=radio].visually-hidden {
   width: 16px;
   background-color: var(--col03);
 }
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+}
 .footer__address {
   margin: 0;
   margin-bottom: 33px;
@@ -1285,6 +1292,20 @@ input[type=radio].visually-hidden {
 }
 .footer__copy a b {
   margin: 0 12px;
+}
+.footer__copy a svg {
+  pointer-events: none;
+  transition: all 0.6s;
+}
+.footer__copy a svg rect {
+  transition: all 0.6s;
+  fill: #E50012;
+}
+.footer__copy a:hover svg {
+  scale: 1.1;
+}
+.footer__copy a:hover svg rect {
+  fill: #007579;
 }
 .footer__copy p {
   margin: 0;

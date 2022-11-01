@@ -100,6 +100,7 @@
 
     a {
       position: relative;
+      padding: 10px 0;
       padding-left: 24px;
       width: 100%;
       display: flex;
@@ -128,11 +129,16 @@
       }
       &::before {
         width: 16px;
-        // transform: translateX(8px);
         background-color: var(--col03);
     }
       }
     }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
   }
 
   &__address {
@@ -153,9 +159,27 @@
       b {
         margin: 0 12px;
       }
+      svg {
+        pointer-events: none;
+        transition: all 0.6s;
+        rect {
+          transition: all 0.6s;
+          fill: #E50012;
+        }
+      }
+
+      &:hover {
+        svg {
+          scale: 1.1;
+          rect {
+            fill: #007579;
+          }
+        }
+      }
     }
     p {
       margin: 0;
     }
+
   }
 }
