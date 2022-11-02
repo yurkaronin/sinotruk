@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loop: false,
     speed: 2400,
     grabCursor: false,
+    // mousewheelControl: false,
     // autoplay: {
     //   delay: 4000,
     //   disableOnInteraction: false,
@@ -52,6 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     parallax: true,
   });
+
+  swiperDETAILS.mousewheel.disable ();
 // реализация синхронизации двух слайдеров между собой
   swiperIMG.controller.control = swiperDETAILS
   swiperDETAILS.controller.control = swiperIMG
