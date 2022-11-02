@@ -24,7 +24,7 @@
     <!-- анонс каталога  -->
     <?php include './php-parts/catalog_preview.php'?>
     <!-- анонсы акций  -->
-    <?php include './php-parts/sale.php'?>
+    <?php include './php-parts/sale_preview.php'?>
 
   </main>
 
