@@ -32,7 +32,8 @@
       }
     }
     a {
-      color: rgba(#ffffff, 0.7);
+      // color: rgba(#ffffff, 0.7);
+      color: var(--col-wh);
       font-family: inherit;
       text-decoration: none;
       display: flex;
@@ -69,9 +70,38 @@
       }
     }
   }
+  @media (min-width: 768px) {
+    &__sublist {
+      opacity: 0;
+      visibility: hidden;
+      height: 0;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      transition: all 0.3s;
+    }
+  }
+  &__sublist {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+
+    a {
+      color: rgba(#ffffff, 0.7);
+    }
+  }
 
   &__head-link {
     position: relative;
+
+    svg {
+      transition: all 0.3s;
+    }
+    .line {
+      transform: translateX(8px) !important;
+    }
 
     &:after {
       content: "";
@@ -81,6 +111,21 @@
       position: absolute;
       left: 0;
       bottom: -1px;
+    }
+
+    &.active {
+      svg {
+        transform: rotate(90deg);
+      }
+      .line {
+        transform: translateX(0) !important;
+      }
+      & + .footer__sublist {
+        opacity: initial;
+        visibility: initial;
+        height: initial;
+        overflow: initial;
+      }
     }
   }
 
@@ -126,11 +171,11 @@
         span {
           color: #ffffff;
           transform: translateX(8px);
-      }
-      &::before {
-        width: 16px;
-        background-color: var(--col03);
-    }
+        }
+        &::before {
+          width: 16px;
+          background-color: var(--col03);
+        }
       }
     }
   }
@@ -164,7 +209,7 @@
         transition: all 0.6s;
         rect {
           transition: all 0.6s;
-          fill: #E50012;
+          fill: #e50012;
         }
       }
 
@@ -180,6 +225,50 @@
     p {
       margin: 0;
     }
+  }
 
+  @media (max-width: 1024px) {
+    &__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    &__info {
+      grid-column: 1/-1;
+      align-items: initial;
+      text-align: initial;
+      flex-direction: row;
+      gap: 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    &__copy {
+      text-align: right;
+    }
+    &__address {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__grid {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    &__info {
+      grid-column: initial;
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    &__copy {
+      text-align: initial;
+      a {
+        justify-content: initial;
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
+    &__sublist {
+      grid-template-columns: 1fr;
+    }
   }
 }

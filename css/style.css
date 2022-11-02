@@ -1187,7 +1187,7 @@ input[type=radio].visually-hidden {
   padding-bottom: 0;
 }
 .footer__nav a {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--col-wh);
   font-family: inherit;
   text-decoration: none;
   display: flex;
@@ -1215,8 +1215,35 @@ input[type=radio].visually-hidden {
 .footer__nav--mod li {
   display: block;
 }
+@media (min-width: 768px) {
+  .footer__sublist {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+}
+.footer__sublist {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.footer__sublist a {
+  color: rgba(255, 255, 255, 0.7);
+}
 .footer__head-link {
   position: relative;
+}
+.footer__head-link svg {
+  transition: all 0.3s;
+}
+.footer__head-link .line {
+  transform: translateX(8px) !important;
 }
 .footer__head-link:after {
   content: "";
@@ -1226,6 +1253,18 @@ input[type=radio].visually-hidden {
   position: absolute;
   left: 0;
   bottom: -1px;
+}
+.footer__head-link.active svg {
+  transform: rotate(90deg);
+}
+.footer__head-link.active .line {
+  transform: translateX(0) !important;
+}
+.footer__head-link.active + .footer__sublist {
+  opacity: initial;
+  visibility: initial;
+  height: initial;
+  overflow: initial;
 }
 .footer__sublist {
   margin: 0;
@@ -1299,7 +1338,7 @@ input[type=radio].visually-hidden {
 }
 .footer__copy a svg rect {
   transition: all 0.6s;
-  fill: #E50012;
+  fill: #e50012;
 }
 .footer__copy a:hover svg {
   scale: 1.1;
@@ -1309,6 +1348,48 @@ input[type=radio].visually-hidden {
 }
 .footer__copy p {
   margin: 0;
+}
+@media (max-width: 1024px) {
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer__info {
+    grid-column: 1/-1;
+    align-items: initial;
+    text-align: initial;
+    flex-direction: row;
+    gap: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer__copy {
+    text-align: right;
+  }
+  .footer__address {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .footer__info {
+    grid-column: initial;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .footer__copy {
+    text-align: initial;
+  }
+  .footer__copy a {
+    justify-content: initial;
+  }
+}
+@media (max-width: 425px) {
+  .footer__sublist {
+    grid-template-columns: 1fr;
+  }
 }
 
 .trucks-list .first__slider-item {

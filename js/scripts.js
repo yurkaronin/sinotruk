@@ -22,6 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.toggle('mob-menu-open');
     menuButton.classList.toggle('open');
   });
+  // аккордеон в подвале
+  const footerLink = document.querySelector('.footer__head-link');
+  footerLink.addEventListener('click', function (e) {
+    e.preventDefault();
+    footerLink.classList.toggle('active');
+  });
   // Слайдеры ///////////////////////////////////////////////////////
   // слайдер с картинками на главной странице
   const swiperIMG = new Swiper('#photo-slider', {
@@ -34,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
     loop: false,
     speed: 2400,
     grabCursor: false,
-    // mousewheelControl: false,
     // autoplay: {
     //   delay: 4000,
     //   disableOnInteraction: false,
@@ -53,10 +58,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     parallax: true,
   });
-
+// отключаем смену слайдов при прокрутке колёсиком мыши
   swiperDETAILS.mousewheel.disable ();
-// реализация синхронизации двух слайдеров между собой
+// синхронизируем два слайдера между собой
   swiperIMG.controller.control = swiperDETAILS
   swiperDETAILS.controller.control = swiperIMG
+
 
 });
