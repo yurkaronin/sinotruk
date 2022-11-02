@@ -5,6 +5,7 @@
   width: 120%;
   z-index: 1;
   pointer-events: none;
+  visibility: hidden;
 
 }
 
@@ -13,4 +14,5 @@ li:hover .dropdown-menu {
   // transform: translateY(0);
   pointer-events: initial;
   // width: 120%;
+  visibility: visible;
 }

@@ -1,21 +1,21 @@
 .wrapper {
-  max-width: calc(1408px + 40px);
-  padding: 0 20px;
+  max-width: calc(1408px + 80px);
+  padding: 0 40px;
   width: 100%;
   margin: 0 auto;
 
-  /* @media (max-width: 1440px) {
+  @media (max-width: 650px) {
     padding: 0 20px;
   }
 
-  @media (max-width: 425px) {
-    padding: 0 10px;
-  } */
+  // @media (max-width: 425px) {
+  //   padding: 0 10px;
+  // }
 
-  /* @media (max-width: 768px) {
-    padding: 0 40px;
-  } */
-  /* @media (max-width: 650px) {
-    padding: 0 20px;
-  } */
+  // @media (max-width: 768px) {
+  //   padding: 0 40px;
+  // }
+  // @media (max-width: 650px) {
+  //   padding: 0 20px;
+  // }
 }

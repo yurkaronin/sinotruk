@@ -17,6 +17,7 @@
 <body class="body">
   <!--  шапка сайта -->
   <?php include './php-parts/header.php'?>
+  <?php include './php-parts/mobile-menu.php'?>
 
   <main>
     <!-- первый экран домашней стр  -->
