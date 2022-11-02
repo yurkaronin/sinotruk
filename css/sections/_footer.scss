@@ -70,7 +70,14 @@
       }
     }
   }
-  @media (min-width: 768px) {
+
+  &__head-link {
+    svg {
+      transform: rotate(90deg);
+    }
+  }
+
+  @media (max-width: 768px) {
     &__sublist {
       opacity: 0;
       visibility: hidden;
@@ -80,13 +87,16 @@
       overflow: hidden;
       transition: all 0.3s;
     }
+
+    &__head-link {
+      svg {
+        transform: rotate(0);
+      }
+    }
+
+
   }
   &__sublist {
-    opacity: 0;
-    visibility: hidden;
-    height: 0;
-    overflow: hidden;
-    transition: all 0.3s;
 
     a {
       color: rgba(#ffffff, 0.7);

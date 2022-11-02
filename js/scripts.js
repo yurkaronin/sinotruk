@@ -1,5 +1,6 @@
-// Переменные
+// Глобальные переменные
 const menuButton = document.querySelector('.nav-button');
+const footerLink = document.querySelector('.footer__head-link');
 // Функции
 function headerChange() {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -22,12 +23,16 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.toggle('mob-menu-open');
     menuButton.classList.toggle('open');
   });
-  // аккордеон в подвале
-  const footerLink = document.querySelector('.footer__head-link');
-  footerLink.addEventListener('click', function (e) {
-    e.preventDefault();
+  // аккордеон в подвале (только под мобилки)
+  if(window.screen.width <= 768) {
     footerLink.classList.toggle('active');
-  });
+
+    footerLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      footerLink.classList.toggle('active');
+    });
+  }
+
   // Слайдеры ///////////////////////////////////////////////////////
   // слайдер с картинками на главной странице
   const swiperIMG = new Swiper('#photo-slider', {

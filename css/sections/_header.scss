@@ -55,6 +55,9 @@
       margin: 0;
       padding: 0;
     }
+    img {
+      display: block;
+    }
   }
 
   &__menu {
@@ -308,6 +311,23 @@
       span {
         margin: 0 !important;
       }
+    }
+  }
+
+  @media (max-width: 375px) {
+    &__logo {
+      max-width: 95px;
+      img {
+        display: block;
+        object-fit: contain;
+        height: initial;
+      }
+    }
+    &__logo-two span {
+      font-size: 18px;
+    }
+    &__tel a span {
+      font-size: 12px;
     }
   }
 }

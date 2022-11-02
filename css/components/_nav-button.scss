@@ -1,61 +1,64 @@
 .nav-button {
-    box-shadow: none;
-    transform: none;
-    border: none;
-    height: 50px;
-    width: 50px;
-    background-color: var(--col01);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  box-shadow: none;
+  transform: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  background-color: var(--col01);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 
-    span {
-      width: 20px;
-      height: 2px;
+  span {
+    width: 20px;
+    height: 2px;
+    background-color: var(--col06);
+    display: block;
+    border-radius: 0;
+    pointer-events: none;
+    transition: all 0.2s;
+
+    &::before,
+    &::after {
+      content: "";
+      width: inherit;
+      height: inherit;
       background-color: var(--col06);
-      display: block;
-      border-radius: 0;
-      pointer-events: none;
-      transition: all 0.2s;
+      display: inherit;
+      position: absolute;
+      border-radius: inherit;
+      pointer-events: initial;
+      transition: initial;
+    }
 
-      &::before,
-      &::after {
-        content: "";
-        width: inherit;
-        height: inherit;
-        background-color: var(--col06);
-        display: inherit;
-        position: absolute;
-        border-radius: inherit;
-        pointer-events: initial;
-        transition: initial;
-      }
+    &:before {
+      margin-top: -6px;
+    }
+
+    &::after {
+      margin-top: 6px;
+    }
+  }
+
+  &.open {
+    span {
+      background-color: transparent;
+      border-radius: 0;
 
       &:before {
-        margin-top: -6px;
+        margin-top: 0;
+        transform: rotate(45deg);
       }
-
-      &::after {
-        margin-top: 6px;
+      &:after {
+        margin-top: 0;
+        transform: rotate(-45deg);
       }
     }
+  }
 
-    &.open {
-      span {
-        background-color: transparent;
-        border-radius: 0;
-
-        &:before {
-          margin-top: 0;
-          transform: rotate(45deg);
-        }
-        &:after {
-          margin-top: 0;
-          transform: rotate(-45deg);
-        }
-      }
-
-
-    }
+  @media (max-width: 375px) {
+    height: 44px;
+    width: 44px;
+  }
 }
