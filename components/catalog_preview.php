@@ -22,18 +22,18 @@
       <!-- правый блок  -->
       <div class="section-grid__right">
         <ul class="list-reset content-grid">
-
-          <!--  анонс карточки автомобиля -->
-          <?php include './php-parts/block/cards_promo.php'?>
-          <?php include './php-parts/block/cards_promo.php'?>
-          <?php include './php-parts/block/cards_promo.php'?>
-          <?php include './php-parts/block/cards_promo.php'?>
-          <?php include './php-parts/block/cards_promo.php'?>
-          <?php include './php-parts/block/cards_promo.php'?>
-          <?php include './php-parts/block/cards_promo.php'?>
-          <?php include './php-parts/block/cards_promo.php'?>
-          <?php include './php-parts/block/cards_promo.php'?>
-
+          <?php
+          // анонсы карточек автомобиля
+          include './components/item/cards_promo.php';
+          include './components/item/cards_promo.php';
+          include './components/item/cards_promo.php';
+          include './components/item/cards_promo.php';
+          include './components/item/cards_promo.php';
+          include './components/item/cards_promo.php';
+          include './components/item/cards_promo.php';
+          include './components/item/cards_promo.php';
+          include './components/item/cards_promo.php';
+          ?>
         </ul>
       </div>
     </div>

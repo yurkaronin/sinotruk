@@ -16,8 +16,9 @@
       <div class="section-grid__right">
         <ul class="list-reset content-grid">
           <!--  анонс карточки c акцией -->
-          <?php include './php-parts/block/sale_promo.php'?>
-          <?php include './php-parts/block/sale_promo.php'?>
+          <?php
+          include './components/item/sale_promo.php';
+          include './components/item/sale_promo.php'?>
         </ul>
       </div>
 

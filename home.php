@@ -11,28 +11,35 @@
     content="SINOTRUK INTERNATIONAL была основана в ноябре 2001 года и является дочерней компанией China National Heavy Duty Truck Group и является единственным официальным каналом внешней торговли для всей группы.">
 
   <!-- favicon css стили -->
-  <?php include './php-parts/styles_include.php'?>
+  <?php include './components/styles_include.php'?>
 </head>
 
 <body class="body">
-  <!--  шапка сайта -->
-  <?php include './php-parts/header.php'?>
-  <?php include './php-parts/mobile-menu.php'?>
+
+  <?php
+  // шапка сайта
+  include './components/header.php';
+  // мобильное меню
+  include './components/mobile-menu.php';
+  ?>
 
   <main>
-    <!-- первый экран домашней стр  -->
-    <?php include './php-parts/home_slider.php'?>
-    <!-- анонс каталога  -->
-    <?php include './php-parts/catalog_preview.php'?>
-    <!-- анонсы акций  -->
-    <?php include './php-parts/sale_preview.php'?>
+  <?php
+    // первый экран домашней стр
+    include './components/home_slider.php';
+    // анонс каталога
+    include './components/catalog_preview.php';
+    // анонсы акций
+    include './components/sale_preview.php';
+    ?>
 
   </main>
 
-  <!--  подвал сайта -->
-  <?php include './php-parts/footer.php'?>
-  <!--  JS библиотеки и прочие зависимости -->
-  <?php include './php-parts/scripts_include.php'?>
+  <?php
+    // подвал
+    include 'components/footer.php';
+    // JS библиотеки и прочие зависимости
+    include 'components/scripts_include.php'?>
 </body>
 
 </html>

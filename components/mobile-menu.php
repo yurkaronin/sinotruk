@@ -2,12 +2,11 @@
   <div class="wrapper">
     <ul class="mobile-menu__list">
       <li class="mobile-menu__item">
-        <a href="#">
+        <a class="mobile-menu__link" href="#">
           <span>Грузовые автомобили</span>
-          <svg class="arrow-icon" width="10" height="18" viewBox="0 0 10 18" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 12L5 16M5 16L9 12M5 16V8" stroke="#FFF100" stroke-width="2" />
-            <line x1="5" x2="5" y2="8" stroke="#FFF100" stroke-width="2" />
+          <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="line" d="M8.5 5L0 5" stroke="#FFF100" stroke-width="2"></path>
+            <path d="M12 9L16 5M16 5L12 1M16 5L8 5" stroke="#FFF100" stroke-width="2"></path>
           </svg>
         </a>
 

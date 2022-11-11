@@ -944,6 +944,36 @@ input[type=radio].visually-hidden {
   width: 16px;
   background-color: var(--col03);
 }
+@media (max-width: 1100px) {
+  .mobile-menu__sublist {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  .mobile-menu__link svg {
+    transform: rotate(0);
+    transition: all 0.3s;
+  }
+  .mobile-menu__link .line {
+    transform: translateX(8px) !important;
+  }
+  .mobile-menu__link.active svg {
+    transform: rotate(-90deg);
+  }
+  .mobile-menu__link.active .line {
+    transform: translateX(0) !important;
+  }
+  .mobile-menu__link.active + .mobile-menu__sublist {
+    opacity: initial;
+    visibility: initial;
+    height: initial;
+    overflow: initial;
+  }
+}
 
 .first__slider-item {
   height: 100vh;
