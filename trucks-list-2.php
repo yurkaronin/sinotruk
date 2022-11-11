@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>ЮРТО-ТРАК - диллер Sinotruk в России</title>
+  <title>Списко грузовиков</title>
   <meta name="description"
     content="SINOTRUK INTERNATIONAL была основана в ноябре 2001 года и является дочерней компанией China National Heavy Duty Truck Group и является единственным официальным каналом внешней торговли для всей группы.">
 
@@ -25,13 +25,13 @@
 </head>
 
 <body class="body">
+
   <header class="header">
     <div class="wrapper">
       <div class="header__flex">
         <div class="header__logo">
           <a href="/">
             <picture>
-              <!-- <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg"> -->
               <source media="(max-width: 1300px)" srcset="./img/logotype-crop.png" width="140">
               <img src="./img/logotype.png" alt="Логотип" width="387">
             </picture>
@@ -53,21 +53,18 @@
 
               <ul class="dropdown-menu header__submenu list-reset">
                 <li><a href="#"><span>C7H</span></a></li>
-                <li><a href="#"><span>T7H</span></a></li>
-                <li><a class="active" href="#"><span>V7G</span></a></li>
-                <li><a href="#"><span>A7</span></a></li>
-                <li><a href="#"><span>HOWO</span></a></li>
-                <li><a href="#"><span>C5H</span></a></li>
-                <li><a href="#"><span>T5G</span></a></li>
-                <li><a href="#"><span>HAOHAN</span></a></li>
-                <li><a href="#"><span>СЕРИЯ GOLDEN PRINCE</span></a></li>
+                <li><a href="#"><span>C7H</span></a></li>
+                <li><a href="#"><span>C7H</span></a></li>
+                <li><a href="#"><span>C7H</span></a></li>
+                <li><a href="#"><span>C7H</span></a></li>
+                <li><a href="#"><span>C7H</span></a></li>
               </ul>
 
             </li>
-            <li><a href="#"><span>Акции</span></a></li>
-            <li class="active"><a href="#"><span>Сервис</span></a></li>
-            <li><a href="#"><span>О компании</span></a></li>
-            <li><a href="#"><span>Контакты</span></a></li>
+            <li><a href=""><span>Акции</span></a></li>
+            <li><a href=""><span>Сервис</span></a></li>
+            <li><a href=""><span>О компании</span></a></li>
+            <li><a href=""><span>Контакты</span></a></li>
           </ul>
         </nav>
 
@@ -107,67 +104,15 @@
 
   </header>
 
-  <main>
-    <section class="first">
+  <main class="trucks-list">
 
-      <div class="first__slider swiper">
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="first__slider-item swiper-slide">
-            <div class="first__slider-image">
-              <img src="./img/first-slider/1.jpg" alt="">
-            </div>
-            <div class="first__slider-content">
-              <div class="wrapper">
-                <h1 class="title">c7h6x2 тягачи</h1>
-                <p class="text">Надежнее, экономичнее, безопаснее, удобнее</p>
-                <a class="button" href="#">
-                  <span>Подробнее</span>
-                  <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m4.5 9 4-4m0 0-4-4m4 4h-8" stroke="#FFF100" stroke-width="2" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- навигация слайдера -->
-        <div class="first__slider-navigation">
-          <div class="wrapper">
-            <div class="swiper-pagination"></div>
-
-            <ul class="list-reset">
-              <li><button class="button-slider swiper-button swiper-button-prev">
-                  <svg class="arrow-icon" width="34" height="18" viewBox="0 0 34 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 1L2 9M2 9L10 17M2 9L18 9" stroke="white" stroke-width="2" />
-                    <path class="line" d="M18 9H34" stroke="white" stroke-width="2" />
-                  </svg>
-                </button></li>
-              <li><button class="button-slider swiper-button swiper-button-next">
-
-                  <svg class="arrow-icon" width="34" height="18" viewBox="0 0 34 18" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 17L32 9M32 9L24 1M32 9L16 9" stroke="white" stroke-width="2" />
-                    <path class="line" d="M0 9H16" stroke="white" stroke-width="2" />
-                  </svg>
-
-                </button></li>
-            </ul>
-
-
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="catalog-preview section-grid">
+    <section class="catalog-preview catalog-preview--mod2 section-grid">
       <div class="wrapper">
 
         <div class="section-grid__content">
           <div class="section-grid__left">
             <div class="sticky-content">
-              <h2 class="title title--mod">Техника Sinotrak</h2>
+              <h2 class="title title--mod">С7H</h2>
               <p class="text">Техника под брендом SITRAK производится концерном грузовых автомобилей SINOTRUK
                 INTERNATIONAL на основе лицензионных технологий немецкого автоконцерна MAN.
                 Серия SITRAK - прекрасная альтернатива для замены седельных тягачей и самосвалов европейских брендов.
@@ -344,61 +289,49 @@
         </div>
       </div>
     </section>
-    <section class="sale section-grid">
+
+
+    <section class="contact-us section-grid">
       <div class="wrapper">
         <div class="section-grid__content">
           <div class="section-grid__left">
-            <h2 class="title title--mod">Акции</h2>
-            <a class="button" href="#">
-              <span>Все акции</span>
-              <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="m4.5 9 4-4m0 0-4-4m4 4h-8" stroke="#FFF100" stroke-width="2" />
+            <h2 class="title title--mod">Свяжитесь с&nbsp;нами</h2>
+            <p class="text">Заполните форму и наши сотрудники свяжутся с вами или звоните по телефону</p>
+            <a class="phone" href="tel:88002220409">
+              <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.02 10.98c4.078 4.079 7.974 4.942 9.412 5.02A10.531 10.531 0 0 0 16 12.55c-.993-.968-2.44-1.955-3.765-2.51l-1.568 1.568c-.536-.144-2.007-.752-3.765-2.51C5.144 7.34 4.536 5.87 4.392 5.333l1.569-1.568C5.405 2.439 4.418.993 3.45 0 2.458.261 1.346.65 0 1.569c.079 1.437.941 5.333 5.02 9.412Z"
+                  fill="#FFF100" />
               </svg>
+              <span>8 800 222 04 09</span>
             </a>
           </div>
+
           <div class="section-grid__right">
             <ul class="list-reset content-grid">
 
               <li class="content-grid__card">
-                <a href="#">
-                  <div class="content-grid__photo">
-                    <img src="./img/sale/1.jpg" alt="фото грузовика" width="508">
-                  </div>
 
-                  <div class="content-grid__item-footer clear">
-                    <div class="content-grid__title">
-                      <h3>Скидка на HAOHAN 20%</h3>
-                      <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="m4 9 4-4m0 0L4 1m4 4H0" stroke="#FFF100" stroke-width="2" />
-                      </svg>
-                    </div>
-                    <p class="content-grid__item-description">Техника под брендом SITRAK производится концерном грузовых
-                      автомобилей SINOTRUK INTERNATIONAL
-                      на основе лицензионных технологий немецкого автоконцерна MAN.</p>
-                  </div>
-
-                </a>
+                <label for="">Ваше имя:</label>
+                <div class="input-wrap">
+                  <input type="text">
+                </div>
               </li>
               <li class="content-grid__card">
-                <a href="#">
-                  <div class="content-grid__photo">
-                    <img src="./img/sale/1.jpg" alt="фото грузовика" width="508">
-                  </div>
+                <label for="">Ваше имя:</label>
+                <div class="input-wrap">
+                  <input type="text">
+                </div>
+              </li>
+              <li class="content-grid__card">
+                <label class="accept">
+                  <input class="visually-hidden" type="checkbox" name="confirm">
+                  <p>Даю согласие на обработку <a href="#" target="_blank">персональных данных</a>
+                  </p></label>
 
-                  <div class="content-grid__item-footer clear">
-
-                    <div class="content-grid__title">
-                      <h3>Скидка на HAOHAN 20%</h3>
-                      <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="m4 9 4-4m0 0L4 1m4 4H0" stroke="#FFF100" stroke-width="2" />
-                      </svg>
-                    </div>
-                    <p class="content-grid__item-description">Техника под брендом SITRAK производится концерном грузовых
-                      автомобилей SINOTRUK INTERNATIONAL
-                      на основе лицензионных технологий немецкого автоконцерна MAN.</p>
-                  </div>
-
-                </a>
+              </li>
+              <li class="content-grid__card">
+                <button class="button">получить консультацию</button>
               </li>
 
             </ul>
@@ -407,6 +340,7 @@
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
@@ -416,30 +350,26 @@
 
           <h3 class="footer__title">
             <span>Грузовые автомобили</span>
-            <svg class="arrow-icon" width="10" height="18" viewBox="0 0 10 18" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 12L5 16M5 16L9 12M5 16V8" stroke="#FFF100" stroke-width="2" />
-              <line x1="5" x2="5" y2="8" stroke="#FFF100" stroke-width="2" />
+            <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="m1 4 4 4m0 0 4-4M5 8V0" stroke="#FFF100" stroke-width="2" />
             </svg>
-
-
           </h3>
           <ul class="footer__list list-reset">
             <li>
               <ul class="footer__sublist list-reset">
-                <li><a href="#">C7H</a></li>
-                <li><a href="#">C7H</a></li>
-                <li><a href="#">C7H</a></li>
-                <li><a href="#">C7H</a></li>
-                <li><a href="#">C7H</a></li>
+                <li><a href="">C7H</a></li>
+                <li><a href="">C7H</a></li>
+                <li><a href="">C7H</a></li>
+                <li><a href="">C7H</a></li>
+                <li><a href="">C7H</a></li>
               </ul>
             </li>
             <li>
               <ul class="footer__sublist list-reset">
-                <li><a href="#">C7H</a></li>
-                <li><a href="#">C7H</a></li>
-                <li><a href="#">C7H</a></li>
-                <li><a href="#">C7H</a></li>
+                <li><a href="">C7H</a></li>
+                <li><a href="">C7H</a></li>
+                <li><a href="">C7H</a></li>
+                <li><a href="">C7H</a></li>
               </ul>
             </li>
           </ul>
@@ -447,16 +377,16 @@
         </div>
         <div class="footer__center">
           <ul class="footer__nav list-reset">
-            <li><a href="#">Акции</a><svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <li><a href="">Акции</a><svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="m4 9 4-4m0 0L4 1m4 4H0" stroke="#FFF100" stroke-width="2" />
               </svg></li>
-            <li><a href="#">Акции</a><svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <li><a href="">Акции</a><svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="m4 9 4-4m0 0L4 1m4 4H0" stroke="#FFF100" stroke-width="2" />
               </svg></li>
-            <li><a href="#">Акции</a><svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <li><a href="">Акции</a><svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="m4 9 4-4m0 0L4 1m4 4H0" stroke="#FFF100" stroke-width="2" />
               </svg></li>
-            <li><a href="#">Акции</a><svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <li><a href="">Акции</a><svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="m4 9 4-4m0 0L4 1m4 4H0" stroke="#FFF100" stroke-width="2" />
               </svg></li>
           </ul>

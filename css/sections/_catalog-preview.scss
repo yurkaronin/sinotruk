@@ -2,4 +2,19 @@
   background-color: var(--col05);
   color: var(--col06);
 
+  &--mod {
+    padding-bottom: 80px;
+  }
+  &--mod2 {
+    padding-top: 156px;
+
+    .content-grid {
+      margin-top: initial;
+    }
+  }
+
+  @media (max-width: 425px) {
+    border-top: none;
+    padding-bottom: 40px;
+  }
 }

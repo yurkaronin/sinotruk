@@ -277,6 +277,7 @@
   }
 
   @media (max-width: 425px) {
+    padding-top: 9px;
     &__sublist {
       grid-template-columns: 1fr;
     }

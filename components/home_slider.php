@@ -3,32 +3,11 @@
   <div class="home-slider__photo-slide" id="photo-slider">
     <div class="swiper-wrapper">
 
-      <div class="swiper-slide">
-        <div class="slider__paralax-wrapper" data-swiper-parallax="0">
-          <picture>
-            <source media="(max-width: 425px)" srcset="./img/first-slider/1-mob.jpg">
-            <img src="./img/first-slider/1.jpg" alt="">
-          </picture>
-        </div>
-      </div>
-
-      <div class="swiper-slide">
-        <div class="slider__paralax-wrapper" data-swiper-parallax="0">
-          <picture>
-            <source media="(max-width: 425px)" srcset="./img/first-slider/1-mob.jpg">
-            <img src="./img/first-slider/1.jpg" alt="">
-          </picture>
-        </div>
-      </div>
-
-      <div class="swiper-slide">
-        <div class="slider__paralax-wrapper" data-swiper-parallax="0">
-          <picture>
-            <source media="(max-width: 425px)" srcset="./img/first-slider/1-mob.jpg">
-            <img src="./img/first-slider/1.jpg" alt="">
-          </picture>
-        </div>
-      </div>
+      <?php
+    include './components/item/slider2.php';
+    include './components/item/slider2.php';
+    include './components/item/slider2.php';
+  ?>
 
     </div>
 

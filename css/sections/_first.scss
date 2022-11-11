@@ -75,7 +75,6 @@
   }
 
   @media (max-width: 1024px) {
-
     &__slider-item {
       height: initial;
     }
@@ -99,4 +98,14 @@
       }
     }
   }
+
+  // вариация слайдера в первом экране
+  &--mod {
+    .first__slider-item {
+      height: initial;
+      min-height: 640px;
+    }
+  }
+
+
 }
