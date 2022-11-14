@@ -158,6 +158,12 @@
     &__controls {
       right: 20px;
     }
+    .swiper-pagination {
+      display: none;
+    }
+    &__controls {
+      grid-template-columns: auto;
+    }
   }
 }
 

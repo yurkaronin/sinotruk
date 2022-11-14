@@ -117,173 +117,19 @@
                 INTERNATIONAL на основе лицензионных технологий немецкого автоконцерна MAN.
                 Серия SITRAK - прекрасная альтернатива для замены седельных тягачей и самосвалов европейских брендов.
               </p>
-              <a class="button" href="#">
-                <span>Каталог грузовиков</span>
-                <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m4.5 9 4-4m0 0-4-4m4 4h-8" stroke="#FFF100" stroke-width="2" />
-                </svg>
-              </a>
+              <!-- тут можно добавить кнопку  -->
             </div>
 
           </div>
           <div class="section-grid__right">
             <ul class="list-reset content-grid">
-
-              <li class="catalog-preview__card">
-                <a href="#">
-                  <div class="content-grid__photo">
-                    <img src="./img/catalog/1.jpg" alt="фото грузовика" width="328">
-                  </div>
-
-                  <div class="content-grid__item-footer">
-                    <div class="content-grid__title">
-                      <h3>C7H</h3>
-                      <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="m4 9 4-4m0 0L4 1m4 4H0" stroke="#FFF100" stroke-width="2" />
-                      </svg>
-                    </div>
-
-                  </div>
-                </a>
-              </li>
-              <li class="catalog-preview__card">
-                <a href="#">
-                  <div class="content-grid__photo">
-                    <img src="./img/catalog/1.jpg" alt="фото грузовика" width="328">
-                  </div>
-
-                  <div class="content-grid__item-footer">
-                    <div class="content-grid__title">
-                      <h3>C7H</h3>
-                      <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="m4 9 4-4m0 0L4 1m4 4H0" stroke="#FFF100" stroke-width="2" />
-                      </svg>
-                    </div>
-
-                  </div>
-                </a>
-              </li>
-              <li class="catalog-preview__card">
-                <a href="#">
-                  <div class="content-grid__photo">
-                    <img src="./img/catalog/1.jpg" alt="фото грузовика" width="328">
-                  </div>
-
-                  <div class="content-grid__item-footer">
-                    <div class="content-grid__title">
-                      <h3>C7H</h3>
-                      <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="m4 9 4-4m0 0L4 1m4 4H0" stroke="#FFF100" stroke-width="2" />
-                      </svg>
-                    </div>
-
-                  </div>
-                </a>
-              </li>
-              <li class="catalog-preview__card">
-                <a href="#">
-                  <div class="content-grid__photo">
-                    <img src="./img/catalog/1.jpg" alt="фото грузовика" width="328">
-                  </div>
-
-                  <div class="content-grid__item-footer">
-                    <div class="content-grid__title">
-                      <h3>C7H</h3>
-                      <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="m4 9 4-4m0 0L4 1m4 4H0" stroke="#FFF100" stroke-width="2" />
-                      </svg>
-                    </div>
-
-                  </div>
-                </a>
-              </li>
-              <li class="catalog-preview__card">
-                <a href="#">
-                  <div class="content-grid__photo">
-                    <img src="./img/catalog/1.jpg" alt="фото грузовика" width="328">
-                  </div>
-
-                  <div class="content-grid__item-footer">
-                    <div class="content-grid__title">
-                      <h3>C7H</h3>
-                      <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="m4 9 4-4m0 0L4 1m4 4H0" stroke="#FFF100" stroke-width="2" />
-                      </svg>
-                    </div>
-
-                  </div>
-                </a>
-              </li>
-              <li class="catalog-preview__card">
-                <a href="#">
-                  <div class="content-grid__photo">
-                    <img src="./img/catalog/1.jpg" alt="фото грузовика" width="328">
-                  </div>
-
-                  <div class="content-grid__item-footer">
-                    <div class="content-grid__title">
-                      <h3>C7H</h3>
-                      <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="m4 9 4-4m0 0L4 1m4 4H0" stroke="#FFF100" stroke-width="2" />
-                      </svg>
-                    </div>
-
-                  </div>
-                </a>
-              </li>
-              <li class="catalog-preview__card">
-                <a href="#">
-                  <div class="content-grid__photo">
-                    <img src="./img/catalog/1.jpg" alt="фото грузовика" width="328">
-                  </div>
-
-                  <div class="content-grid__item-footer">
-                    <div class="content-grid__title">
-                      <h3>C7H</h3>
-                      <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="m4 9 4-4m0 0L4 1m4 4H0" stroke="#FFF100" stroke-width="2" />
-                      </svg>
-                    </div>
-
-                  </div>
-                </a>
-              </li>
-              <li class="catalog-preview__card">
-                <a href="#">
-                  <div class="content-grid__photo">
-                    <img src="./img/catalog/1.jpg" alt="фото грузовика" width="328">
-                  </div>
-
-                  <div class="content-grid__item-footer">
-                    <div class="content-grid__title">
-                      <h3>C7H</h3>
-                      <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="m4 9 4-4m0 0L4 1m4 4H0" stroke="#FFF100" stroke-width="2" />
-                      </svg>
-                    </div>
-
-                  </div>
-                </a>
-              </li>
-              <li class="catalog-preview__card">
-                <a href="#">
-                  <div class="content-grid__photo">
-                    <img src="./img/catalog/1.jpg" alt="фото грузовика" width="328">
-                  </div>
-
-                  <div class="content-grid__item-footer">
-                    <div class="content-grid__title">
-                      <h3>C7H</h3>
-                      <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="m4 9 4-4m0 0L4 1m4 4H0" stroke="#FFF100" stroke-width="2" />
-                      </svg>
-                    </div>
-
-                  </div>
-                </a>
-              </li>
-
-
+              <?php
+          // анонсы карточек автомобиля
+          include './components/item/cards_promo.php';
+          include './components/item/cards_promo.php';
+          include './components/item/cards_promo.php';
+          include './components/item/cards_promo.php';
+          ?>
             </ul>
           </div>
         </div>
@@ -308,33 +154,48 @@
           </div>
 
           <div class="section-grid__right">
-            <ul class="list-reset content-grid">
+            <form action="#"
+              id="customForm" name="form" onsubmit="alert('submit!');return false">
+              <ul class="list-reset content-grid">
 
-              <li class="content-grid__card">
+                <li class="content-grid__card">
 
-                <label for="">Ваше имя:</label>
-                <div class="input-wrap">
-                  <input type="text">
-                </div>
-              </li>
-              <li class="content-grid__card">
-                <label for="">Ваше имя:</label>
-                <div class="input-wrap">
-                  <input type="text">
-                </div>
-              </li>
-              <li class="content-grid__card">
-                <label class="accept">
-                  <input class="visually-hidden" type="checkbox" name="confirm">
-                  <p>Даю согласие на обработку <a href="#" target="_blank">персональных данных</a>
-                  </p></label>
+                  <label for="name">Ваше имя:</label>
 
-              </li>
-              <li class="content-grid__card">
-                <button class="button">получить консультацию</button>
-              </li>
+                  <div class="input-wrap">
+                    <input type="text" id="name" name="name" placeholder="Введите имя" data-reg="^[А-ЯЁ][а-яё]*$">
+                  </div>
+                  <p class="error-message"><strong>Ошибка:</strong> Используйте только русские буквы. Первая буква в имени - Заглавная.</p>
+                </li>
+                <li class="content-grid__card">
+                  <label for="">Телефон:</label>
+                  <div class="input-wrap">
+                    <input type="tel" name="tel" placeholder="+7 (918) 098-76-54" data-reg="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$">
+                  </div>
+                  <p class="error-message">Используйте только цифры, пожалуйста</p>
+                </li>
+                <li class="content-grid__card">
+                  <label class="accept" for="check-accept">
+                    <input class="visually-hidden" type="checkbox" name="confirm" id="check-accept" requiered checked>
+                    <p>Даю согласие на обработку <a href="#" target="_blank">персональных данных</a>
+                    </p>
+                  </label>
 
-            </ul>
+                </li>
+                <li class="content-grid__card">
+
+                  <button class="button" type="submit" id="button" name="button">
+                    <span>получить консультацию</span>
+                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="line" d="M8.5 5L0 5" stroke="#FFF100" stroke-width="2"></path>
+                      <path d="M12 9L16 5M16 5L12 1M16 5L8 5" stroke="#FFF100" stroke-width="2"></path>
+                    </svg>
+                  </button>
+
+                </li>
+
+              </ul>
+            </form>
           </div>
 
         </div>
@@ -343,75 +204,11 @@
 
   </main>
 
-  <footer class="footer">
-    <div class="wrapper">
-      <div class="footer__grid">
-        <div class="footer__left">
-
-          <h3 class="footer__title">
-            <span>Грузовые автомобили</span>
-            <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="m1 4 4 4m0 0 4-4M5 8V0" stroke="#FFF100" stroke-width="2" />
-            </svg>
-          </h3>
-          <ul class="footer__list list-reset">
-            <li>
-              <ul class="footer__sublist list-reset">
-                <li><a href="">C7H</a></li>
-                <li><a href="">C7H</a></li>
-                <li><a href="">C7H</a></li>
-                <li><a href="">C7H</a></li>
-                <li><a href="">C7H</a></li>
-              </ul>
-            </li>
-            <li>
-              <ul class="footer__sublist list-reset">
-                <li><a href="">C7H</a></li>
-                <li><a href="">C7H</a></li>
-                <li><a href="">C7H</a></li>
-                <li><a href="">C7H</a></li>
-              </ul>
-            </li>
-          </ul>
-
-        </div>
-        <div class="footer__center">
-          <ul class="footer__nav list-reset">
-            <li><a href="">Акции</a><svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="m4 9 4-4m0 0L4 1m4 4H0" stroke="#FFF100" stroke-width="2" />
-              </svg></li>
-            <li><a href="">Акции</a><svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="m4 9 4-4m0 0L4 1m4 4H0" stroke="#FFF100" stroke-width="2" />
-              </svg></li>
-            <li><a href="">Акции</a><svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="m4 9 4-4m0 0L4 1m4 4H0" stroke="#FFF100" stroke-width="2" />
-              </svg></li>
-            <li><a href="">Акции</a><svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="m4 9 4-4m0 0L4 1m4 4H0" stroke="#FFF100" stroke-width="2" />
-              </svg></li>
-          </ul>
-        </div>
-        <div class="footer__right">
-          <ul class="footer__address list-reset">
-            <li>Общий телефон: <span><b>8 800 222 04 09</b> (бесплатный звонок)</span></li>
-            <li>Отдел продаж: <span><b>+7 (928) 404-90-20</span></b></li>
-            <li>Адрес: <span>350087, Россия, Краснодарский край, г. Краснодар, Ростовское шоссе 47</span></li>
-          </ul>
-
-          <div class="footer__copy">
-            <p>© 2022 <span>ООО «Юрто-Трак»</span>. Все права защищены.</p>
-            <a href="https://very-good.ru/">Создание сайта - <b>Very-good</b><img src="./img/developer.svg"
-                alt="разработчик сайта компания VeryGood"></a>
-          </div>
-
-
-        </div>
-      </div>
-    </div>
-
-  </footer>
-  <script src="./libs/swiper-bundle.min.js"></script>
-  <script src="./js/scripts.js"></script>
+  <?php
+    // подвал
+    include 'components/footer.php';
+    // JS библиотеки и прочие зависимости
+    include 'components/scripts_include.php'?>
 </body>
 
 </html>

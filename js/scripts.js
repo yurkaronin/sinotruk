@@ -23,6 +23,8 @@ function headerChange() {
 document.addEventListener("DOMContentLoaded", () => {
   // подключаем файлы тут
   includeFiles("./js/parts/sliders.js");
+  includeFiles("./js/parts/input-validate.js");
+
 
   // небольшие программы
   // Проверяем состояние прокрутки страницы. если прокрутка есть - перекрашиваем шапку
