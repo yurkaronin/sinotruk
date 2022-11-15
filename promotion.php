@@ -44,7 +44,7 @@
 
           <div class="page__body">
 
-            <img src="./img/sale/1-big.jpg" alt="фото акции" width="">
+            <img src="./img/sale/1-big.jpg" alt="фото акции" width="928">
 
             <h2>Подзаголовок статьи второго уровня</h2>
             <p>В 2007 году подписан дилерский договор с компанией RENAULT TRUCKS SAS. В 2011 году сдана в эксплуатацию

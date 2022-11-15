@@ -1951,6 +1951,59 @@ input[type=radio].visually-hidden {
   font-size: 16px;
   color: #c1c1c1;
 }
+.page__body strong,
+.page__body b {
+  color: #ffffff;
+}
+.page__body h2,
+.page__body h3,
+.page__body h4,
+.page__body h5,
+.page__body h6 {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.page__body h2 {
+  font-size: 24px;
+}
+.page__body h3 {
+  font-size: 22px;
+}
+.page__body h4 {
+  font-size: 20px;
+}
+.page__body h5 {
+  font-size: 18px;
+}
+.page__body h6 {
+  font-size: 16px;
+}
+.page__body ul,
+.page__body ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.page__body li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 32px;
+  margin-bottom: 12px;
+}
+.page__body li:last-child {
+  margin-bottom: 0;
+}
+.page__body li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: #e50012;
+  left: 0;
+}
 
 .header-sticky .header {
   background-color: var(--col08);
