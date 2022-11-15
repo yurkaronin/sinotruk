@@ -158,19 +158,14 @@
     .button {
       margin-left: initial;
     }
-    // .section-grid__left .title {
-    //   margin-bottom: 10px;
-    //   font-size: 30px;
-    // }
-    // .section-grid__left .text {
-    //   margin-bottom: 16px;
-    //   font-size: 16px;
-    // }
   }
 
   @media (max-width: 425px) {
     .button {
       max-width: 100%;
+    }
+    label {
+      font-size: 16px;
     }
   }
 }

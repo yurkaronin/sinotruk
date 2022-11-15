@@ -29,6 +29,8 @@
 
   &--full {
     border: none;
+    padding-bottom: initial !important;
+
     .section-grid__content {
       grid-template-columns: 1fr;
     }

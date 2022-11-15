@@ -139,6 +139,11 @@ input[type=radio].visually-hidden {
   }
 }
 
+.container {
+  max-width: 928px;
+  margin: 0 auto;
+}
+
 .button {
   position: relative;
   display: flex;
@@ -332,6 +337,7 @@ input[type=radio].visually-hidden {
 }
 .section-grid--full {
   border: none;
+  padding-bottom: initial !important;
 }
 .section-grid--full .section-grid__content {
   grid-template-columns: 1fr;
@@ -432,10 +438,6 @@ input[type=radio].visually-hidden {
 .content-grid__title svg {
   flex-shrink: 0;
 }
-.content-grid__item-description {
-  margin: 0;
-  line-height: 1.5;
-}
 .content-grid .clear {
   background-color: transparent;
 }
@@ -443,6 +445,7 @@ input[type=radio].visually-hidden {
   padding-top: 10px;
   padding-bottom: 12px;
   position: relative;
+  margin-bottom: 22px;
 }
 .content-grid .clear .content-grid__title::after {
   content: "";
@@ -452,6 +455,9 @@ input[type=radio].visually-hidden {
   position: absolute;
   left: 0;
   bottom: -1px;
+}
+.content-grid .clear .content-grid__item-description {
+  margin-bottom: 34px;
 }
 .content-grid a {
   text-decoration: none;
@@ -647,6 +653,7 @@ input[type=radio].visually-hidden {
 
 .pagination {
   margin-top: 20px;
+  margin-bottom: 16px;
 }
 .pagination__wrapper {
   display: flex;
@@ -726,6 +733,42 @@ input[type=radio].visually-hidden {
   .pagination .navigation-button {
     width: 100%;
   }
+}
+
+.breadcrumbs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.breadcrumbs li {
+  margin-right: 12px;
+}
+.breadcrumbs li:last-child {
+  margin-right: 0;
+}
+.breadcrumbs a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  color: #ffffff;
+}
+.breadcrumbs a svg {
+  transform: rotate(180deg);
+}
+.breadcrumbs a .line {
+  transform: translateX(7px);
+  transition: all 0.3s;
+}
+.breadcrumbs a span {
+  transition: all 0.3s;
+}
+.breadcrumbs a:hover .line {
+  transform: translateX(0);
+}
+.breadcrumbs a:hover span {
+  margin-left: 7px;
+  color: var(--col03);
 }
 
 .header {
@@ -1428,6 +1471,7 @@ input[type=radio].visually-hidden {
 }
 .catalog-preview--mod2 {
   border: none;
+  padding-bottom: 80px;
 }
 .catalog-preview--mod2 .content-grid {
   margin-top: initial;
@@ -1458,8 +1502,7 @@ input[type=radio].visually-hidden {
   padding: 0 24px;
 }
 .sale .content-grid__item-description {
-  padding-top: 22px;
-  padding-bottom: 26px;
+  margin-bottom: 32px;
   color: inherit !important;
 }
 @media (max-width: 1024px) {
@@ -1634,6 +1677,9 @@ input[type=radio].visually-hidden {
 @media (max-width: 425px) {
   .contact-us .button {
     max-width: 100%;
+  }
+  .contact-us label {
+    font-size: 16px;
   }
 }
 
@@ -1876,39 +1922,14 @@ input[type=radio].visually-hidden {
   }
 }
 
-.page-top {
+.page {
+  padding-top: 0;
+  padding-bottom: 64px;
+}
+.page__top {
   margin-bottom: 35px;
 }
-.page-top .breadcrumbs {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-.page-top .breadcrumbs a {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1;
-  color: #ffffff;
-}
-.page-top .breadcrumbs a svg {
-  transform: rotate(180deg);
-}
-.page-top .breadcrumbs a .line {
-  transform: translateX(7px);
-  transition: all 0.3s;
-}
-.page-top .breadcrumbs a span {
-  transition: all 0.3s;
-}
-.page-top .breadcrumbs a:hover .line {
-  transform: translateX(0);
-}
-.page-top .breadcrumbs a:hover span {
-  margin-left: 7px;
-  color: var(--col03);
-}
-.page-top .title {
+.page__top .title {
   margin: 0;
   font-weight: 700;
   font-size: 80px;
@@ -1917,14 +1938,18 @@ input[type=radio].visually-hidden {
   color: #ffffff;
 }
 @media (max-width: 1024px) {
-  .page-top .title {
+  .page__top .title {
     font-size: 48px;
   }
 }
 @media (max-width: 425px) {
-  .page-top .title {
+  .page__top .title {
     font-size: 30px;
   }
+}
+.page__body {
+  font-size: 16px;
+  color: #c1c1c1;
 }
 
 .header-sticky .header {

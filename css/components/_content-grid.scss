@@ -47,12 +47,6 @@
     }
   }
 
-  &__item-description {
-    margin: 0;
-    // color: rgba(#ffffff, 0.7);
-    line-height: 1.5;
-  }
-
   .clear {
     background-color: transparent;
 
@@ -60,6 +54,7 @@
       padding-top: 10px;
       padding-bottom: 12px;
       position: relative;
+      margin-bottom: 22px;
 
       &::after {
         content: "";
@@ -70,6 +65,9 @@
         left: 0;
         bottom: -1px;
       }
+    }
+    .content-grid__item-description {
+      margin-bottom: 34px;
     }
   }
 
@@ -129,6 +127,9 @@
         display: none;
       }
     }
+    // .clear &__item-description {
+    //   margin-bottom: 32px;
+    // }
   }
 
   @media (max-width: 425px) {
@@ -145,6 +146,5 @@
         object-position: center;
       }
     }
-
   }
 }

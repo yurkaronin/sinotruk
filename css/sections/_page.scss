@@ -1,0 +1,33 @@
+.page {
+  padding-top: 0;
+  padding-bottom: 64px;
+  &__top {
+    margin-bottom: 35px;
+
+    .title {
+      margin: 0;
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 1.1;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+    @media (max-width: 1024px) {
+      .title {
+        font-size: 48px;
+      }
+    }
+
+    @media (max-width: 425px) {
+      .title {
+        font-size: 30px;
+      }
+    }
+  }
+
+  &__body {
+    font-size: 16px;
+    color: #c1c1c1;
+  }
+}
