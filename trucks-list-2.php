@@ -23,7 +23,7 @@
   ?>
 
 
-  <main>
+  <main class="inner-page">
 
     <section class="catalog-preview catalog-preview--mod2 section-grid">
       <div class="wrapper">

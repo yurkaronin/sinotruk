@@ -1,0 +1,59 @@
+.page-top {
+  margin-bottom: 35px;
+
+  .breadcrumbs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    a {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1;
+      color: #ffffff;
+
+      svg {
+        transform: rotate(180deg);
+      }
+      .line {
+        transform: translateX(7px);
+        transition: all 0.3s;
+      }
+      span {
+        transition: all 0.3s;
+      }
+
+      &:hover {
+        .line {
+          transform: translateX(0);
+        }
+        span {
+          margin-left: 7px;
+          color: var(--col03);
+        }
+      }
+    }
+  }
+
+  .title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  @media (max-width: 1024px) {
+    .title {
+      font-size: 48px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .title {
+      font-size: 30px;
+    }
+  }
+}
