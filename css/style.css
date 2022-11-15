@@ -771,6 +771,52 @@ input[type=radio].visually-hidden {
   color: var(--col03);
 }
 
+.content__contacts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.content__contacts-list li {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.3;
+  color: #ffffff;
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-bottom: 24px !important;
+  display: block !important;
+}
+.content__contacts-list li::after {
+  display: none !important;
+}
+.content__contacts-list li::before {
+  display: none !important;
+}
+.content__contacts-list span {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #c1c1c1;
+}
+.content__contacts-list a {
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+.content__contacts-list a[href^="tel:"] {
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration-line: none;
+}
+.content__contacts-list a[href^="mailto:"] {
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFF100;
+  text-decoration-line: underline;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -2003,6 +2049,17 @@ input[type=radio].visually-hidden {
   height: 2px;
   background-color: #e50012;
   left: 0;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+}
+.map__content {
+  height: 520px;
+  width: 100%;
 }
 
 .header-sticky .header {

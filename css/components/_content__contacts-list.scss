@@ -1,0 +1,47 @@
+.content__contacts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.3;
+    color: #ffffff;
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-bottom: 24px !important;
+    display: block !important;
+    &::after {
+      display: none !important;
+    }
+    &::before {
+      display: none !important;
+    }
+  }
+  span {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #c1c1c1;
+  }
+  a {
+    text-decoration-line: underline;
+    color: #ffffff;
+  }
+  a[href^="tel:"] {
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration-line: none;
+  }
+
+  a[href^="mailto:"] {
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFF100;
+    text-decoration-line: underline;
+  }
+}
