@@ -2,6 +2,7 @@
   background-color: var(--col02);
   color: var(--col06);
   padding: 66px 0 80px;
+  border: none;
 
   .section-grid__left {
     padding: initial;
@@ -127,7 +128,6 @@
     display: none;
   }
 
-
   .error {
     &::before {
       border-width: 2px;
@@ -139,20 +139,38 @@
     }
   }
 
-  input[is-valid="0"] {
-    // border: 2px solid red;
+  @media (max-width: 600px) {
+    padding: 50px 0 55px;
+
+    .content-grid {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    label {
+      margin-bottom: 10px;
+    }
+    .content-grid__card {
+      margin-bottom: 22px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .button {
+      margin-left: initial;
+    }
+    // .section-grid__left .title {
+    //   margin-bottom: 10px;
+    //   font-size: 30px;
+    // }
+    // .section-grid__left .text {
+    //   margin-bottom: 16px;
+    //   font-size: 16px;
+    // }
   }
 
-  // input:invalid:required {
-  //   background-image: linear-gradient(to right, pink, lightgreen);
-  // }
-
-  // input:valid {
-  //   border: 2px solid black;
-  // }
-
-  // .button:disabled {
-  //   opacity: 0.5;
-  //   cursor: default;
-  // }
+  @media (max-width: 425px) {
+    .button {
+      max-width: 100%;
+    }
+  }
 }

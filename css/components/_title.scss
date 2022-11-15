@@ -24,4 +24,10 @@
       background-color: var(--col03);
     }
   }
+
+  @media (max-width: 425px) {
+    &--mod {
+      padding-left: 12px;
+    }
+  }
 }

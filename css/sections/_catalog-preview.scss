@@ -7,9 +7,17 @@
   }
   &--mod2 {
     padding-top: 156px;
+    border: none;
 
     .content-grid {
       margin-top: initial;
+    }
+  }
+
+
+  @media (max-width: 1024px) {
+    .section-grid__left {
+      padding-top: 0;
     }
   }
 

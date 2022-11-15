@@ -14,7 +14,6 @@
   <?php include './components/styles_include.php'?>
 </head>
 <!-- ВАЖНО! тут дополнительный класс, для корректной стилизации слайдера в первом экране  -->
-
 <body class="body slider-mod">
   <?php
   // шапка сайта
