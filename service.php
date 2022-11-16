@@ -42,8 +42,87 @@
             <h1 class="title">Сервис</h1>
           </div>
 
-          <div class="page__body">
+          <section class="custom-slider">
 
+            <div class="custom-slider__left">
+              <!-- слайдер  -->
+              <div class="big-photo-slider">
+                <div class="big-photo-slider__item">
+                  <img src="./img/custom-slider/service/1-big.jpg" alt="фото" width="808">
+                </div>
+
+              </div>
+
+              <!-- кнопки навигации  -->
+              <div class="big-photo-slider__navigation">
+                <button class="navigation-button navigation-button-prev">
+                  <svg class="arrow-icon" width="34" height="18" viewBox="0 0 34 18" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 1L2 9M2 9L10 17M2 9L18 9" stroke="white" stroke-width="2" />
+                    <path class="line" d="M18 9H34" stroke="white" stroke-width="2" />
+                  </svg>
+                </button>
+                <button class="navigation-button navigation-button-next">
+                  <svg class="arrow-icon" width="34" height="18" viewBox="0 0 34 18" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 17L32 9M32 9L24 1M32 9L16 9" stroke="white" stroke-width="2" />
+                    <path class="line" d="M0 9H16" stroke="white" stroke-width="2" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="custom-slider__right">
+              <!-- кнопка назад  -->
+              <button class="navigation-button navigation-button-prev">
+                <svg class="arrow-icon" width="34" height="18" viewBox="0 0 34 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 1L2 9M2 9L10 17M2 9L18 9" stroke="white" stroke-width="2" />
+                  <path class="line" d="M18 9H34" stroke="white" stroke-width="2" />
+                </svg>
+              </button>
+
+              <!-- слайдер  -->
+              <ul class="min-photo-slider">
+                <li class="min-photo-slider__item">
+                  <img src="./img/custom-slider/service/1-min.jpg" alt="фото" width="88">
+                </li>
+                <li class="min-photo-slider__item">
+                  <img src="./img/custom-slider/service/1-min.jpg" alt="фото" width="88">
+                </li>
+                <li class="min-photo-slider__item">
+                  <img src="./img/custom-slider/service/1-min.jpg" alt="фото" width="88">
+                </li>
+                <li class="min-photo-slider__item">
+                  <img src="./img/custom-slider/service/1-min.jpg" alt="фото" width="88">
+                </li>
+                <li class="min-photo-slider__item">
+                  <img src="./img/custom-slider/service/1-min.jpg" alt="фото" width="88">
+                </li>
+                <li class="min-photo-slider__item">
+                  <img src="./img/custom-slider/service/1-min.jpg" alt="фото" width="88">
+                </li>
+                <li class="min-photo-slider__item">
+                  <img src="./img/custom-slider/service/1-min.jpg" alt="фото" width="88">
+                </li>
+
+              </ul>
+              <!-- кнопка вперёд  -->
+              <button class="navigation-button navigation-button-next">
+                <svg class="arrow-icon" width="34" height="18" viewBox="0 0 34 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 17L32 9M32 9L24 1M32 9L16 9" stroke="white" stroke-width="2" />
+                  <path class="line" d="M0 9H16" stroke="white" stroke-width="2" />
+                </svg>
+              </button>
+
+            </div>
+
+
+
+          </section>
+
+          <div class="page__body">
             <p><strong>ООО «ЮРТО-ТРАКЦЕНТР»</strong> динамично развивающаяся компания в сфере автомобильного бизнеса.
             </p>
             <p>Входит в группу компаний «ЮЖНО-РОССИЙСКОЕ ТРАНСПОРТНОЕ ОБЪЕДИНЕНИЕ (ЮРТО)». Общая численность сотрудников
@@ -71,7 +150,7 @@
     </section>
 
     <?php
-  // Блок с формой обратной связи - короткая форма
+  // Блок с формой обратной связи - специальная версия формы с полями дата и время
   include './components/contact-us-service.php';
   ?>
 
