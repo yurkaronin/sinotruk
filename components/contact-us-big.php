@@ -1,8 +1,8 @@
-<section class="contact-us section-grid">
+<section class="contact-us  contact-us--big section-grid">
   <div class="wrapper">
     <div class="section-grid__content">
       <div class="section-grid__left">
-        <h2 class="title title--mod">Свяжитесь с&nbsp;нами</h2>
+        <h2 class="title title--mod">Обратная &nbsp;связь</h2>
         <p class="text">Заполните форму и наши сотрудники свяжутся с вами или звоните по телефону</p>
         <a class="phone" href="tel:88002220409">
           <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -19,15 +19,14 @@
           <ul class="list-reset content-grid">
 
             <li class="content-grid__card">
-
               <label for="name">Ваше имя:</label>
-
               <div class="input-wrap">
                 <input type="text" id="name" name="name" placeholder="Введите имя" data-reg="^[А-ЯЁ][а-яё]*$">
               </div>
-              <p class="error-message"><strong>Ошибка:</strong> Используйте только русские буквы. Первая буква в
+              <p class="error-message"><strong>Ошибка:</strong>Используйте только русские буквы. Первая буква в
                 имени - Заглавная.</p>
             </li>
+
             <li class="content-grid__card">
               <label for="">Телефон:</label>
               <div class="input-wrap">
@@ -36,7 +35,23 @@
               </div>
               <p class="error-message">Используйте только цифры, пожалуйста</p>
             </li>
+
             <li class="content-grid__card">
+              <label for="name">E-mail:</label>
+              <div class="input-wrap">
+                <input type="email" id="name" name="name" placeholder="Введите имя" data-reg="^((([0-9A-Za-z]{1}[-0-9A-z\.]{0,30}[0-9A-Za-z]?)|([0-9А-Яа-я]{1}[-0-9А-я\.]{0,30}[0-9А-Яа-я]?))@([-A-Za-z]{1,}\.){1,}[-A-Za-z]{2,})$">
+              </div>
+              <p class="error-message"><strong>Ошибка:</strong>Введите реальный адрес почтового ящика, вида box@mail.ru.</p>
+            </li>
+
+            <li class="content-grid__card content-grid__card--big">
+              <label for="name">Сообщение:</label>
+              <div class="input-wrap">
+                <textarea name="" id="" rows="6"></textarea>
+              </div>
+            </li>
+
+            <li class="content-grid__card content-grid__card--long">
               <label class="accept" for="check-accept">
                 <input class="visually-hidden" type="checkbox" name="confirm" id="check-accept" required checked>
                 <p>Даю согласие на обработку <a href="#" target="_blank">персональных данных</a>
@@ -47,7 +62,7 @@
             <li class="content-grid__card">
 
               <button class="button" type="submit" id="button" name="button">
-                <span>получить консультацию</span>
+                <span>Отправить</span>
                 <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="line" d="M8.5 5L0 5" stroke="#FFF100" stroke-width="2"></path>
                   <path d="M12 9L16 5M16 5L12 1M16 5L8 5" stroke="#FFF100" stroke-width="2"></path>

@@ -1,6 +1,13 @@
 .page {
   padding-top: 0;
   padding-bottom: 64px;
+
+  &--clear {
+    padding-bottom: 0;
+  }
+  &--wrap {
+    padding: 40px 0;
+  }
   &__top {
     margin-bottom: 35px;
 

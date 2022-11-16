@@ -1594,6 +1594,12 @@ input[type=radio].visually-hidden {
   flex-direction: column;
   margin-bottom: auto;
 }
+.contact-us .content-grid__card--big {
+  grid-column: 1/-1;
+}
+.contact-us .content-grid__card--long {
+  grid-column: 1/3;
+}
 .contact-us label {
   margin-bottom: 24px;
   font-size: 18px;
@@ -1605,6 +1611,11 @@ input[type=radio].visually-hidden {
   max-width: 100%;
   position: relative;
   z-index: 2;
+  padding: 5px 15px;
+}
+.contact-us textarea {
+  width: 100%;
+  max-width: 100%;
   padding: 5px 15px;
 }
 .contact-us .button {
@@ -1699,12 +1710,30 @@ input[type=radio].visually-hidden {
 .contact-us .error + .error-message {
   display: block;
 }
+@media (max-width: 768px) {
+  .contact-us .content-grid {
+    gap: 16px;
+  }
+  .contact-us .content-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .contact-us .content-grid__card--long {
+    grid-column: initial !important;
+  }
+  .contact-us .button {
+    width: 100%;
+    max-width: 100%;
+  }
+  .contact-us label {
+    margin-bottom: 12px;
+  }
+}
 @media (max-width: 600px) {
   .contact-us {
     padding: 50px 0 55px;
   }
   .contact-us .content-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     gap: 0;
   }
   .contact-us label {
@@ -1727,6 +1756,9 @@ input[type=radio].visually-hidden {
   .contact-us label {
     font-size: 16px;
   }
+}
+.contact-us--big .content-grid {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer {
@@ -1972,6 +2004,12 @@ input[type=radio].visually-hidden {
   padding-top: 0;
   padding-bottom: 64px;
 }
+.page--clear {
+  padding-bottom: 0;
+}
+.page--wrap {
+  padding: 40px 0;
+}
 .page__top {
   margin-bottom: 35px;
 }
@@ -2053,13 +2091,22 @@ input[type=radio].visually-hidden {
 
 .map {
   width: 100%;
-  height: 100%;
   position: relative;
   z-index: 10;
 }
 .map__content {
   height: 520px;
   width: 100%;
+}
+@media (max-width: 768px) {
+  .map__content {
+    height: 320px;
+  }
+}
+
+/** dealer-detail */
+[class*=copyrights-pane] {
+  display: none !important;
 }
 
 .header-sticky .header {

@@ -24,7 +24,7 @@
   ?>
 
   <main class="inner-page">
-    <section class="page">
+    <section class="page page--clear">
       <div class="wrapper">
         <div class="container">
 
@@ -52,7 +52,7 @@
     </div>
 
 
-    <section class="page">
+    <section class="page page--wrap">
       <div class="wrapper">
         <div class="container">
 
@@ -100,7 +100,7 @@
 
     <?php
   // Блок с формой обратной связи - короткая форма
-  include './components/contact-us.php';
+  include './components/contact-us-big.php';
   ?>
 
     </div>
