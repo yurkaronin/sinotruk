@@ -44,17 +44,44 @@
 
           <section class="custom-slider">
 
-            <div class="custom-slider__left">
+            <div class="custom-slider__big-photo">
               <!-- слайдер  -->
-              <div class="big-photo-slider">
-                <div class="big-photo-slider__item">
-                  <img src="./img/custom-slider/service/1-big.jpg" alt="фото" width="808">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <!-- слайды -->
+
+                  <div class="swiper-slide">
+                    <img src="./img/custom-slider/service/1-big.jpg" alt="фото" width="808">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/custom-slider/service/2-big.jpg" alt="фото" width="808">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/custom-slider/service/3-big.jpg" alt="фото" width="808">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/custom-slider/service/1-big.jpg" alt="фото" width="808">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/custom-slider/service/2-big.jpg" alt="фото" width="808">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/custom-slider/service/3-big.jpg" alt="фото" width="808">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/custom-slider/service/1-big.jpg" alt="фото" width="808">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/custom-slider/service/2-big.jpg" alt="фото" width="808">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/custom-slider/service/3-big.jpg" alt="фото" width="808">
+                  </div>
+
                 </div>
-
               </div>
-
               <!-- кнопки навигации  -->
-              <div class="big-photo-slider__navigation">
+              <div class="custom-slider__navigation">
                 <button class="navigation-button navigation-button-prev">
                   <svg class="arrow-icon" width="34" height="18" viewBox="0 0 34 18" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -70,9 +97,10 @@
                   </svg>
                 </button>
               </div>
+
             </div>
 
-            <div class="custom-slider__right">
+            <div class="custom-slider__small-photo">
               <!-- кнопка назад  -->
               <button class="navigation-button navigation-button-prev">
                 <svg class="arrow-icon" width="34" height="18" viewBox="0 0 34 18" fill="none"
@@ -81,32 +109,40 @@
                   <path class="line" d="M18 9H34" stroke="white" stroke-width="2" />
                 </svg>
               </button>
-
               <!-- слайдер  -->
-              <ul class="min-photo-slider">
-                <li class="min-photo-slider__item">
-                  <img src="./img/custom-slider/service/1-min.jpg" alt="фото" width="88">
-                </li>
-                <li class="min-photo-slider__item">
-                  <img src="./img/custom-slider/service/1-min.jpg" alt="фото" width="88">
-                </li>
-                <li class="min-photo-slider__item">
-                  <img src="./img/custom-slider/service/1-min.jpg" alt="фото" width="88">
-                </li>
-                <li class="min-photo-slider__item">
-                  <img src="./img/custom-slider/service/1-min.jpg" alt="фото" width="88">
-                </li>
-                <li class="min-photo-slider__item">
-                  <img src="./img/custom-slider/service/1-min.jpg" alt="фото" width="88">
-                </li>
-                <li class="min-photo-slider__item">
-                  <img src="./img/custom-slider/service/1-min.jpg" alt="фото" width="88">
-                </li>
-                <li class="min-photo-slider__item">
-                  <img src="./img/custom-slider/service/1-min.jpg" alt="фото" width="88">
-                </li>
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src="./img/custom-slider/service/1-min.jpg" alt="фото" width="88">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/custom-slider/service/2-min.jpg" alt="фото" width="88">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/custom-slider/service/3-min.jpg" alt="фото" width="88">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/custom-slider/service/1-min.jpg" alt="фото" width="88">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/custom-slider/service/2-min.jpg" alt="фото" width="88">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/custom-slider/service/3-min.jpg" alt="фото" width="88">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/custom-slider/service/1-min.jpg" alt="фото" width="88">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/custom-slider/service/2-min.jpg" alt="фото" width="88">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/custom-slider/service/3-min.jpg" alt="фото" width="88">
+                  </div>
 
-              </ul>
+                </div>
+              </div>
               <!-- кнопка вперёд  -->
               <button class="navigation-button navigation-button-next">
                 <svg class="arrow-icon" width="34" height="18" viewBox="0 0 34 18" fill="none"
@@ -117,8 +153,6 @@
               </button>
 
             </div>
-
-
 
           </section>
 
