@@ -142,6 +142,10 @@
     display: none;
   }
 
+  // input:not([value]) + .input-wrap:after {
+  //   border-color: green;
+  // }
+
   .error {
     &::before {
       border-width: 2px;
@@ -192,6 +196,10 @@
     }
     .button {
       margin-left: initial;
+    }
+    .accept {
+      padding-left: 32px;
+      font-size: 14px !important;
     }
   }
 

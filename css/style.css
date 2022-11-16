@@ -1748,6 +1748,10 @@ input[type=radio].visually-hidden {
   .contact-us .button {
     margin-left: initial;
   }
+  .contact-us .accept {
+    padding-left: 32px;
+    font-size: 14px !important;
+  }
 }
 @media (max-width: 425px) {
   .contact-us .button {
