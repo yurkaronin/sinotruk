@@ -23,7 +23,7 @@
               <div class="input-wrap">
                 <input type="text" id="name" name="name" placeholder="Введите имя" data-reg="^[А-ЯЁ][а-яё]*$">
               </div>
-              <p class="error-message"><strong>Ошибка:</strong>Используйте только русские буквы. Первая буква в
+              <p class="error-message"><strong>Ошибка: </strong> Используйте только русские буквы. Первая буква в
                 имени - Заглавная.</p>
             </li>
 
@@ -41,7 +41,7 @@
               <div class="input-wrap">
                 <input type="email" id="name" name="name" placeholder="Введите имя" data-reg="^((([0-9A-Za-z]{1}[-0-9A-z\.]{0,30}[0-9A-Za-z]?)|([0-9А-Яа-я]{1}[-0-9А-я\.]{0,30}[0-9А-Яа-я]?))@([-A-Za-z]{1,}\.){1,}[-A-Za-z]{2,})$">
               </div>
-              <p class="error-message"><strong>Ошибка:</strong>Введите реальный адрес почтового ящика, вида box@mail.ru.</p>
+              <p class="error-message"><strong>Ошибка: </strong> Введите реальный адрес почтового ящика, вида box@mail.ru.</p>
             </li>
 
             <li class="content-grid__card content-grid__card--big">
