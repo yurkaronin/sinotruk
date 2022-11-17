@@ -37,16 +37,16 @@ if (document.querySelector('#photo-slider')) {
 
 
 // СЕРВИС слайдеры
-if (document.querySelector('.custom-slider')) {
-  // миниатюры
-  var swiper3 = new Swiper(".custom-slider__small-photo .swiper", {
+// миниатюры
+if (document.querySelector('#slider-small-img-2')) {
+  var swiper3 = new Swiper("#slider-small-img-2 .swiper", {
     spaceBetween: 16,
     loop: true,
     freeMode: true,
     watchSlidesProgress: true,
     navigation: {
-      nextEl: ".custom-slider__small-photo .navigation-button-next",
-      prevEl: ".custom-slider__small-photo .navigation-button-prev",
+      nextEl: "#slider-small-img-2 .navigation-button-next",
+      prevEl: "#slider-small-img-2 .navigation-button-prev",
     },
     breakpoints: {
       0: { // при 0px и выше
@@ -63,13 +63,46 @@ if (document.querySelector('.custom-slider')) {
       }
     },
   });
-  // большой слайдер
-  var swiper4 = new Swiper(".custom-slider__big-photo .swiper", {
+};
+// большой слайдер
+if (document.querySelector('#slider-big-img-2')) {
+  var swiper4 = new Swiper("#slider-big-img-2 .swiper", {
     spaceBetween: 32,
     loop: true,
     navigation: {
-      nextEl: ".custom-slider__big-photo .navigation-button-next",
-      prevEl: ".custom-slider__big-photo .navigation-button-prev",
+      nextEl: "#slider-big-img-2 .navigation-button-next",
+      prevEl: "#slider-big-img-2 .navigation-button-prev",
+    },
+    thumbs: {
+      swiper: swiper3,
+    },
+  });
+};
+
+// Карточка автомобиля слайдеры
+// миниатюры
+if (document.querySelector('#slider-small-img')) {
+  var swiper3 = new Swiper("#slider-small-img .swiper", {
+    spaceBetween: 16,
+    loop: true,
+    freeMode: true,
+    watchSlidesProgress: true,
+    direction: 'horizontal',
+    slidesPerView: 6,
+    navigation: {
+      nextEl: "#slider-small-img .navigation-button-next",
+      prevEl: "#slider-small-img .navigation-button-prev",
+    },
+  });
+};
+// большой слайдер
+if (document.querySelector('#slider-big-img')) {
+  var swiper = new Swiper("#slider-big-img .swiper", {
+    spaceBetween: 32,
+    loop: true,
+    navigation: {
+      nextEl: "#slider-big-img .navigation-button-next",
+      prevEl: "#slider-big-img .navigation-button-prev",
     },
     thumbs: {
       swiper: swiper3,

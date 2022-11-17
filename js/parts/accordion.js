@@ -1,3 +1,5 @@
+
+
 if(accordion) {
   for (let item of accordion) {
     item.addEventListener('click', function (e) {

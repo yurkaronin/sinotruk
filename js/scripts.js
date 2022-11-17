@@ -10,6 +10,17 @@ function includeFiles(url) {
   script.src = url;
   document.getElementsByTagName('head')[0].appendChild(script);
 };
+
+// добавляет активный класс первому аккордеону
+function classАddition() {
+  // accordion[0].querySelector('accordion__top').classList.add('active');
+  let item = accordion[0].querySelector('.accordion__top');
+  console.log(item);
+  item.classList.add('active');
+};
+
+classАddition();
+
 // модификация шапки
 function headerChange() {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;

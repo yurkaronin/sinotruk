@@ -144,4 +144,29 @@
     }
   }
 
+  &--mod {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    .custom-slider__big-photo {
+      max-height: 688px;
+    }
+    .custom-slider__small-photo {
+      grid-template-columns: 24px auto 24px;
+      grid-template-rows: initial !important;
+      max-height: initial;
+      gap: 16px;
+
+      .swiper {
+        width: 100%;
+      }
+      .navigation-button-prev {
+        transform: rotate(0);
+      }
+      .navigation-button-next {
+        transform: rotate(0);
+      }
+    }
+
+  }
+
 }

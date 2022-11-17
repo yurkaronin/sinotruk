@@ -857,6 +857,9 @@ input[type=radio].visually-hidden {
   border-color: rgba(217, 217, 217, 0.3);
   margin-bottom: 16px;
 }
+.accordion:last-child {
+  margin-bottom: 0;
+}
 .accordion__title {
   font-weight: 700;
   font-size: 24px;
@@ -950,10 +953,13 @@ input[type=radio].visually-hidden {
   margin-bottom: 0;
 }
 .accordion__body small {
-  margin-top: 3em;
+  padding-top: 1em;
   opacity: 0.7;
   display: block;
   font-style: italic;
+  border-top: 1px solid;
+  border-color: rgba(217, 217, 217, 0.3);
+  margin-top: 1em;
 }
 .active + .accordion__body {
   padding: 17px 24px 32px;
@@ -2374,7 +2380,32 @@ input[type=radio].visually-hidden {
     transform: rotate(0);
   }
 }
+.custom-slider--mod {
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.custom-slider--mod .custom-slider__big-photo {
+  max-height: 688px;
+}
+.custom-slider--mod .custom-slider__small-photo {
+  grid-template-columns: 24px auto 24px;
+  grid-template-rows: initial !important;
+  max-height: initial;
+  gap: 16px;
+}
+.custom-slider--mod .custom-slider__small-photo .swiper {
+  width: 100%;
+}
+.custom-slider--mod .custom-slider__small-photo .navigation-button-prev {
+  transform: rotate(0);
+}
+.custom-slider--mod .custom-slider__small-photo .navigation-button-next {
+  transform: rotate(0);
+}
 
+.truck-card {
+  padding-bottom: 80px;
+}
 .truck-card__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

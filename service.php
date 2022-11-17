@@ -44,7 +44,7 @@
 
           <section class="custom-slider">
 
-            <div class="custom-slider__big-photo">
+            <div class="custom-slider__big-photo" id="slider-big-img-2">
               <!-- слайдер  -->
               <div class="swiper">
                 <div class="swiper-wrapper">
@@ -100,7 +100,7 @@
 
             </div>
 
-            <div class="custom-slider__small-photo">
+            <div class="custom-slider__small-photo" id="slider-small-img-2">
               <!-- кнопка назад  -->
               <button class="navigation-button navigation-button-prev">
                 <svg class="arrow-icon" width="34" height="18" viewBox="0 0 34 18" fill="none"

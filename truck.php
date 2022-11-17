@@ -61,7 +61,123 @@
       <div class="wrapper">
         <div class="truck-card__grid">
           <div class="truck-card-slider">
-            <!-- тут будет кастомный слайдер  -->
+            <div class="sticky-content">
+              <!-- тут будет кастомный слайдер  -->
+              <div class="custom-slider custom-slider--mod">
+
+                <div class="custom-slider__big-photo" id="slider-big-img">
+                  <!-- слайдер  -->
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <!-- слайды -->
+
+                      <div class="swiper-slide">
+                        <img src="./img/custom-slider/service/1-big.jpg" alt="фото" width="808">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/custom-slider/service/2-big.jpg" alt="фото" width="808">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/custom-slider/service/3-big.jpg" alt="фото" width="808">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/custom-slider/service/1-big.jpg" alt="фото" width="808">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/custom-slider/service/2-big.jpg" alt="фото" width="808">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/custom-slider/service/3-big.jpg" alt="фото" width="808">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/custom-slider/service/1-big.jpg" alt="фото" width="808">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/custom-slider/service/2-big.jpg" alt="фото" width="808">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/custom-slider/service/3-big.jpg" alt="фото" width="808">
+                      </div>
+
+                    </div>
+                  </div>
+                  <!-- кнопки навигации  -->
+                  <div class="custom-slider__navigation">
+                    <button class="navigation-button navigation-button-prev">
+                      <svg class="arrow-icon" width="34" height="18" viewBox="0 0 34 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 1L2 9M2 9L10 17M2 9L18 9" stroke="white" stroke-width="2" />
+                        <path class="line" d="M18 9H34" stroke="white" stroke-width="2" />
+                      </svg>
+                    </button>
+                    <button class="navigation-button navigation-button-next">
+                      <svg class="arrow-icon" width="34" height="18" viewBox="0 0 34 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 17L32 9M32 9L24 1M32 9L16 9" stroke="white" stroke-width="2" />
+                        <path class="line" d="M0 9H16" stroke="white" stroke-width="2" />
+                      </svg>
+                    </button>
+                  </div>
+
+                </div>
+
+                <div class="custom-slider__small-photo" id="slider-small-img">
+                  <!-- кнопка назад  -->
+                  <button class="navigation-button navigation-button-prev">
+                    <svg class="arrow-icon" width="34" height="18" viewBox="0 0 34 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1L2 9M2 9L10 17M2 9L18 9" stroke="white" stroke-width="2" />
+                      <path class="line" d="M18 9H34" stroke="white" stroke-width="2" />
+                    </svg>
+                  </button>
+                  <!-- слайдер  -->
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <img src="./img/custom-slider/service/1-min.jpg" alt="фото" width="88">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/custom-slider/service/2-min.jpg" alt="фото" width="88">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/custom-slider/service/3-min.jpg" alt="фото" width="88">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/custom-slider/service/1-min.jpg" alt="фото" width="88">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/custom-slider/service/2-min.jpg" alt="фото" width="88">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/custom-slider/service/3-min.jpg" alt="фото" width="88">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/custom-slider/service/1-min.jpg" alt="фото" width="88">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/custom-slider/service/2-min.jpg" alt="фото" width="88">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/custom-slider/service/3-min.jpg" alt="фото" width="88">
+                      </div>
+
+                    </div>
+                  </div>
+                  <!-- кнопка вперёд  -->
+                  <button class="navigation-button navigation-button-next">
+                    <svg class="arrow-icon" width="34" height="18" viewBox="0 0 34 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M24 17L32 9M32 9L24 1M32 9L16 9" stroke="white" stroke-width="2" />
+                      <path class="line" d="M0 9H16" stroke="white" stroke-width="2" />
+                    </svg>
+                  </button>
+
+                </div>
+
+              </div>
+            </div>
+            <!-- конец кастомного слайдера  -->
           </div>
           <div class="truck-card__details">
             <ul class="truck-card__list">
