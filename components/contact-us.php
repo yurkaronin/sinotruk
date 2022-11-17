@@ -25,7 +25,7 @@
               <div class="input-wrap">
                 <input type="text" id="name" name="name" placeholder="Введите имя" data-reg="^[А-ЯЁ][а-яё]*$">
               </div>
-              <p class="error-message"><strong>Ошибка:</strong> Используйте только русские буквы. Первая буква в
+              <p class="error-message"><strong>Ошибка: </strong> Используйте только русские буквы. Первая буква в
                 имени - Заглавная.</p>
             </li>
             <li class="content-grid__card">

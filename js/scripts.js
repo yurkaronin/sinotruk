@@ -2,7 +2,6 @@
 const menuButton = document.querySelector('.nav-button');
 const footerLink = document.querySelector('.footer__head-link');
 const mobileLink = document.querySelectorAll('.mobile-menu__link');
-const accordion = document.querySelectorAll('.accordion');
 // Функции
 // функция подключения скриптов
 function includeFiles(url) {
@@ -10,16 +9,6 @@ function includeFiles(url) {
   script.src = url;
   document.getElementsByTagName('head')[0].appendChild(script);
 };
-
-// добавляет активный класс первому аккордеону
-function classАddition() {
-  // accordion[0].querySelector('accordion__top').classList.add('active');
-  let item = accordion[0].querySelector('.accordion__top');
-  console.log(item);
-  item.classList.add('active');
-};
-
-classАddition();
 
 // модификация шапки
 function headerChange() {

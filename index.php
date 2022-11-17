@@ -41,7 +41,7 @@
           <li><a href="./trucks-list.php" target="_blank">+ Список грузовиков</a></li>
           <li><a href="./trucks-list-2.php" target="_blank">+ Список грузовиков 2</a></li>
 
-          <li><a href="./truck.php" target="_blank">Грузовик</a></li>
+          <li><a href="./truck.php" target="_blank">+ Грузовик</a></li>
           <li><a href="./promotions-list.php" target="_blank">+ Акции</a></li>
           <li><a href="./promotion.php" target="_blank">+ Акция</a></li>
           <li><a href="./service.php" target="_blank">+ Сервис</a></li>

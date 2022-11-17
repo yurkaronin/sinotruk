@@ -10,10 +10,10 @@ if (document.querySelector('#photo-slider')) {
     loop: false,
     speed: 2400,
     grabCursor: false,
-    // autoplay: {
-    //   delay: 4000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
     mousewheel: {
       invert: false,
     },

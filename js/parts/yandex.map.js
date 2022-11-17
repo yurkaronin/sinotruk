@@ -11,7 +11,7 @@ if (document.querySelector('.map')) {
 
     let placemarRkschool = new ymaps.Placemark([45.13542039095159, 39.02629313757318], {}, {
       iconLayout: 'default#image', /* говорим что будем отображать на карте в качестве геометки  */
-      iconImageHref: '../img/map/balun.svg', /* указываем пусть к картинке на нашем сайте  */
+      iconImageHref: './img/map/balun.svg', /* указываем пусть к картинке на нашем сайте  */
       iconImageSize: [48, 64], /* размеры картинки  */
       iconImageOffset: [-19, -44] /* отступ от центра  */
     });
@@ -29,10 +29,10 @@ if (document.querySelector('.map')) {
 
     placemarRkschool.events
       .add('mouseenter', function (e) {
-        e.get('target').options.set('iconImageHref', '../img/map/balun-hover.svg');
+        e.get('target').options.set('iconImageHref', './img/map/balun-hover.svg');
       })
       .add('mouseleave', function (e) {
-        e.get('target').options.set('iconImageHref', '../img/map/balun.svg');
+        e.get('target').options.set('iconImageHref', './img/map/balun.svg');
       });
   }
 

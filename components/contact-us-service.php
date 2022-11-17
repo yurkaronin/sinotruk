@@ -23,7 +23,7 @@
               <div class="input-wrap">
                 <input type="text" id="name" name="name" placeholder="Введите имя" data-reg="^[А-ЯЁ][а-яё]*$">
               </div>
-              <p class="error-message"><strong>Ошибка:</strong>Используйте только русские буквы. Первая буква в
+              <p class="error-message"><strong>Ошибка: </strong>Используйте только русские буквы. Первая буква в
                 имени - Заглавная.</p>
             </li>
 
@@ -41,7 +41,7 @@
               <div class="input-wrap">
                 <input type="date" id="date" name="date" placeholder="Введите имя">
               </div>
-              <p class="error-message"><strong>Ошибка:</strong>Введите реальный адрес почтового ящика, вида box@mail.ru.</p>
+              <p class="error-message"><strong>Ошибка: </strong>Введите реальный адрес почтового ящика, вида box@mail.ru.</p>
             </li>
 
             <li class="content-grid__card">
@@ -49,7 +49,7 @@
               <div class="input-wrap">
                 <input type="time" id="time" name="appt-time" placeholder="Введите имя" ng-model="endTime" >
               </div>
-              <p class="error-message"><strong>Ошибка:</strong>Введите реальный адрес почтового ящика, вида box@mail.ru.</p>
+              <p class="error-message"><strong>Ошибка: </strong>Введите реальный адрес почтового ящика, вида box@mail.ru.</p>
             </li>
 
             <li class="content-grid__card content-grid__card--big">
