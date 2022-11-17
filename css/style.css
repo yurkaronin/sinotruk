@@ -831,6 +831,138 @@ input[type=radio].visually-hidden {
   text-decoration-line: underline;
 }
 
+.top-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.top-grid__right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.price {
+  font-weight: 700;
+  display: block;
+  font-size: 32px;
+  line-height: 1;
+  text-align: right;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.accordion {
+  border: 1px solid;
+  border-color: rgba(217, 217, 217, 0.3);
+  margin-bottom: 16px;
+}
+.accordion__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.33;
+  color: inherit;
+  margin: 0;
+  padding: 11px 24px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+.accordion__arrow {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid;
+  border-color: rgba(217, 217, 217, 0.3);
+  pointer-events: none;
+}
+.accordion__arrow svg {
+  transform: rotate(90deg);
+  transition: all 0.3s;
+}
+.accordion__arrow svg path {
+  transition: all 0.3s;
+  transform: translateX(-4px);
+}
+.accordion__arrow svg .line {
+  transition: all 0.3s;
+  transform: translateX(4px);
+}
+.accordion__top {
+  display: grid;
+  grid-template-columns: auto 55px;
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid;
+  border-color: transparent;
+  width: 100%;
+  max-width: 100%;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  color: var(--col-wh);
+}
+.accordion__top:hover {
+  background-color: #ffffff;
+  color: #333333;
+}
+.accordion__top:hover svg path {
+  transform: translateX(0);
+  stroke: var(--col01);
+}
+.accordion__top:hover svg .line {
+  transform: translateX(0);
+}
+.accordion__top.active {
+  border-color: rgba(217, 217, 217, 0.3);
+}
+.accordion__top.active svg {
+  transform: rotate(-90deg);
+}
+.accordion__body {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 18px;
+  color: #bababa;
+}
+.accordion__body span {
+  font-weight: 700;
+  color: #ffffff;
+}
+.accordion__body ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.accordion__body li {
+  margin-bottom: 0.7em;
+}
+.accordion__body li:last-child {
+  margin-bottom: 0;
+}
+.accordion__body small {
+  margin-top: 3em;
+  opacity: 0.7;
+  display: block;
+  font-style: italic;
+}
+.active + .accordion__body {
+  padding: 17px 24px 32px;
+  opacity: initial;
+  visibility: initial;
+  height: initial;
+  overflow: initial;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -2241,6 +2373,17 @@ input[type=radio].visually-hidden {
   .custom-slider__small-photo .navigation-button-next {
     transform: rotate(0);
   }
+}
+
+.truck-card__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.truck-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .header-sticky .header {

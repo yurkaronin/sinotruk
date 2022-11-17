@@ -1,0 +1,22 @@
+.top-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  &__left {
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+}
+
+.price {
+  font-weight: 700;
+  display: block;
+  font-size: 32px;
+  line-height: 1;
+  text-align: right;
+  color: #ffffff;
+  margin-bottom: 12px;
+}

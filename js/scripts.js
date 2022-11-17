@@ -2,6 +2,7 @@
 const menuButton = document.querySelector('.nav-button');
 const footerLink = document.querySelector('.footer__head-link');
 const mobileLink = document.querySelectorAll('.mobile-menu__link');
+const accordion = document.querySelectorAll('.accordion');
 // Функции
 // функция подключения скриптов
 function includeFiles(url) {
@@ -22,10 +23,10 @@ function headerChange() {
 // Основная рабочая область
 document.addEventListener("DOMContentLoaded", () => {
   // подключаем файлы тут
+  includeFiles("./js/parts/accordion.js");
   includeFiles("./js/parts/sliders.js");
   includeFiles("./js/parts/input-validate.js");
   includeFiles("./js/parts/yandex.map.js");
-
 
   // небольшие программы
   // Проверяем состояние прокрутки страницы. если прокрутка есть - перекрашиваем шапку
