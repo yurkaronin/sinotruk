@@ -1,3 +1,7 @@
 .inner-page {
   padding-top: 156px;
+
+  @media (max-width: 768px) {
+    padding-top: 130px;
+  }
 }

@@ -94,4 +94,14 @@
       }
     }
   }
+
+  &--mod {
+    padding-bottom: 34px;
+  }
+
+  @media (max-width: 768px) {
+    &--mod {
+      padding-bottom: 24px;
+    }
+  }
 }

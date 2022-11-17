@@ -17,10 +17,13 @@
     text-transform: uppercase;
     transition: all 0.3s;
     pointer-events: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
   &__arrow {
     width: 55px;
-    height: 55px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,5 +125,14 @@
     visibility: initial;
     height: initial;
     overflow: initial;
+  }
+
+  @media (max-width: 1024px) {
+    &__title {
+      font-size: 18px;
+    }
+    &__body {
+      font-size: 16px;
+    }
   }
 }

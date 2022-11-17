@@ -25,7 +25,7 @@
 
   <main class="inner-page">
 
-    <section class="page">
+    <section class="page page--mod">
       <div class="wrapper">
 
         <div class="page__top top-grid">
@@ -40,7 +40,7 @@
                   <span>Назад к списку</span></a>
               </li>
             </ul>
-            <h1 class="title">c7h6x2 тягач</h1>
+            <h1 class="title title--mod">c7h6x2 тягач</h1>
           </div>
           <div class="top-grid__right">
             <span class="price">от 4 000 000 ₽</span>

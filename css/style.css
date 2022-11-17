@@ -664,6 +664,11 @@ input[type=radio].visually-hidden {
 .inner-page {
   padding-top: 156px;
 }
+@media (max-width: 768px) {
+  .inner-page {
+    padding-top: 130px;
+  }
+}
 
 .pagination {
   margin-top: 20px;
@@ -833,16 +838,17 @@ input[type=radio].visually-hidden {
 
 .top-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 260px;
   gap: 32px;
+  align-items: center;
+  margin-bottom: 0 !important;
 }
 .top-grid__right {
   display: flex;
   flex-direction: column;
   align-items: end;
 }
-
-.price {
+.top-grid .price {
   font-weight: 700;
   display: block;
   font-size: 32px;
@@ -850,6 +856,35 @@ input[type=radio].visually-hidden {
   text-align: right;
   color: #ffffff;
   margin-bottom: 12px;
+}
+@media (max-width: 720px) {
+  .top-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .top-grid__right {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+  }
+  .top-grid__right .price {
+    text-align: left;
+  }
+  .top-grid__right .button {
+    margin-left: auto;
+  }
+}
+@media (max-width: 550px) {
+  .top-grid__right {
+    grid-template-columns: 1fr;
+  }
+  .top-grid__right .price {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+  .top-grid__right .button {
+    margin-left: initial;
+    display: none;
+  }
 }
 
 .accordion {
@@ -870,10 +905,13 @@ input[type=radio].visually-hidden {
   text-transform: uppercase;
   transition: all 0.3s;
   pointer-events: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 .accordion__arrow {
   width: 55px;
-  height: 55px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -967,6 +1005,14 @@ input[type=radio].visually-hidden {
   visibility: initial;
   height: initial;
   overflow: initial;
+}
+@media (max-width: 1024px) {
+  .accordion__title {
+    font-size: 18px;
+  }
+  .accordion__body {
+    font-size: 16px;
+  }
 }
 
 .header {
@@ -2244,6 +2290,14 @@ input[type=radio].visually-hidden {
   background-color: #e50012;
   left: 0;
 }
+.page--mod {
+  padding-bottom: 34px;
+}
+@media (max-width: 768px) {
+  .page--mod {
+    padding-bottom: 24px;
+  }
+}
 
 .map {
   width: 100%;
@@ -2415,6 +2469,20 @@ input[type=radio].visually-hidden {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+@media (max-width: 768px) {
+  .truck-card__grid {
+    grid-template-columns: 1fr;
+  }
+  .truck-card .sticky-content {
+    position: initial;
+  }
+  .truck-card .custom-slider {
+    margin-bottom: 0;
+  }
+  .truck-card .custom-slider__big-photo {
+    max-height: 420px;
+  }
 }
 
 .header-sticky .header {
