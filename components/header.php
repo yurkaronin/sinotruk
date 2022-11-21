@@ -25,15 +25,15 @@
             </a>
 
             <ul class="dropdown-menu header__submenu list-reset">
-              <li><a href="#"><span>C7H</span></a></li>
-              <li><a href="#"><span>T7H</span></a></li>
-              <li><a class="active" href="#"><span>V7G</span></a></li>
-              <li><a href="#"><span>A7</span></a></li>
+              <li><a href="#"><span>Sitrak</span></a></li>
+              <li><a class="active" href="#"><span>Howo T5G</span></a></li>
+              <li><a href="#"><span>Howo HW76</span></a></li>
+              <!-- <li><a href="#"><span>A7</span></a></li>
               <li><a href="#"><span>HOWO</span></a></li>
               <li><a href="#"><span>C5H</span></a></li>
               <li><a href="#"><span>T5G</span></a></li>
               <li><a href="#"><span>HAOHAN</span></a></li>
-              <li><a href="#"><span>СЕРИЯ GOLDEN PRINCE</span></a></li>
+              <li><a href="#"><span>СЕРИЯ GOLDEN PRINCE</span></a></li> -->
             </ul>
 
           </li>
